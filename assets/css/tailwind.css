@@ -2,6 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+body {
+  @apply font-body;
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus {
+  @apply outline-none;
+}
 .theme-black {
   --bg-background-pri: #000a12;
   --bg-background-sec: #263238;

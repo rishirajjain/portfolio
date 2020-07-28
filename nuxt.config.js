@@ -1,4 +1,5 @@
 const path = require("path");
+const axios = require("axios");
 export default {
   /*
    ** Nuxt rendering mode
@@ -15,14 +16,15 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || "",
+    title: "Rishi Raj Jain - UI/UX designer",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content:
+          "Portfolio of Rishi Raj Jain, I also Blog about UI/UX and some things that I find interesting. "
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
@@ -33,15 +35,48 @@ export default {
       }
     ]
   },
+
+  generate: {
+    routes: function(callback) {
+      const token = `LTOEkYkK1LmeCtIDvKEYJQtt`;
+      const version = "published";
+      let cache_version = 0;
+
+      // other routes that are not in Storyblok with their slug.
+      let routes = ["/"]; // adds / directly
+
+      // Load space and receive latest cache version key to improve performance
+      axios
+        .get(`https://api.storyblok.com/v1/cdn/spaces/me?token=${token}`)
+        .then(space_res => {
+          // timestamp of latest publish
+          cache_version = space_res.data.space.version;
+
+          // Call for all Links using the Links API: https://www.storyblok.com/docs/Delivery-Api/Links
+          axios
+            .get(
+              `https://api.storyblok.com/v1/cdn/links?token=${token}&version=${version}&cv=${cache_version}&per_page=100`
+            )
+            .then(res => {
+              Object.keys(res.data.links).forEach(key => {
+                routes.push("/" + res.data.links[key].slug);
+              });
+
+              callback(null, routes);
+            });
+        });
+    }
+  },
+
   /*
    ** Global CSS
    */
-  css: ["@/assets/css/main.css", "@/assets/css/tailwind.css"],
+  css: ["@/assets/css/tailwind.css"],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [{ src: "~plugins/ga.js", mode: "client" }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

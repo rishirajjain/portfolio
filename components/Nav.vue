@@ -22,7 +22,7 @@
           </ul>
           <div class="self-start tooltip relative">
             <p class="tooltip-text">Change theme</p>
-            <button @click.prevent="toggleTheme" class="focus:outline-none">
+            <button @click.prevent="toggleTheme" class>
               <img
                 v-if="themeBtn === 'theme-black'"
                 src="/light.svg"
@@ -40,15 +40,15 @@
       <div class="flex items-center justify-end">
         <div class="self-start tooltip relative">
           <p class="tooltip-text">Change theme</p>
-          <button @click.prevent="toggleTheme" class="focus:outline-none">
+          <button @click.prevent="toggleTheme" class>
             <img v-if="themeBtn === 'theme-black'" src="/light.svg" alt="change theme" class="w-6" />
             <img v-else src="/black.svg" alt="change theme" class="w-6" />
           </button>
         </div>
       </div>
       <div
-        :class="isOpen ? 'block' : 'hidden'"
-        class="flex justify-center items-center fixed bottom-0 left-0 w-full bg-background-ter h-20 z-50"
+        v-if="isOpen"
+        class="flex justify-center items-center fixed bottom-0 left-0 w-full bg-background-ter h-24 z-50"
       >
         <div
           class="absolute bottom-0 right-0 origin-bottom-left mb-24 w-56 z-30 rounded-md shadow-lg"
@@ -63,64 +63,100 @@
             >
               <a
                 href="mailto:rishirajjain98@gmail.com?subject=Regarding an offer at {Insert Company name}&body=Hey Rishi, "
-                class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900"
                 role="menuitem"
               >Contact Me</a>
               <a
-                href="#"
-                class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                href="https://docs.google.com/document/d/1JcDdPgwZYYAt6B574EY3fc__xwqjt-Pz7LD29I_w72I/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900"
                 role="menuitem"
               >Download Resume</a>
             </div>
           </div>
         </div>
-        <div class="w-full mx-8">
+        <div class="w-full mx-4">
           <div class="flex justify-between items-center bg-text-ux text-base text-txt-pri">
             <div>
               <nuxt-link
                 to="/"
-                class="flex flex-col transition duration-200 ease-in-out transform hover:-translate-y-1"
+                class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
               >
-                <img v-if="themeBtn === 'theme-black'" src="/home_l.svg" alt="home" />
-                <img v-else src="/home_d.svg" alt="home " />
-                <span>Home</span>
+                <img
+                  v-if="themeBtn === 'theme-black'"
+                  src="/home_l.svg"
+                  alt="home"
+                  class="w-12 h-8 mb-2"
+                />
+                <img v-else src="/home_d.svg" alt="home " class="w-12 h-8 mb-2" />
+                <span class="text-xs">Home</span>
               </nuxt-link>
             </div>
             <div>
               <nuxt-link
-                to="work"
-                class="flex flex-col transition duration-200 ease-in-out transform hover:-translate-y-1"
+                to="/work"
+                class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
               >
-                <img v-if="themeBtn === 'theme-black'" src="/work_l.svg" alt="work" />
-                <img v-else src="/work_b.svg" alt="work" />
-                <span>work</span>
+                <img
+                  v-if="themeBtn === 'theme-black'"
+                  src="/work_l.svg"
+                  alt="work"
+                  class="w-12 h-8 mb-2"
+                />
+                <img v-else src="/work_b.svg" alt="work" class="w-12 h-8 mb-2" />
+                <span class="text-xs">Work</span>
               </nuxt-link>
             </div>
             <div>
               <nuxt-link
-                to="about"
-                class="flex flex-col transition duration-200 ease-in-out transform hover:-translate-y-1"
+                to="/about"
+                class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
               >
-                <img v-if="themeBtn === 'theme-black'" src="/about_l.svg" alt="about" />
-                <img v-else src="/about_b.svg" alt="about" />
-                <span>about</span>
+                <img
+                  v-if="themeBtn === 'theme-black'"
+                  src="/about_l.svg"
+                  alt="about"
+                  class="w-12 h-8 mb-2"
+                />
+                <img v-else src="/about_b.svg" alt="about" class="w-12 h-8 mb-2" />
+                <span class="text-xs">About</span>
               </nuxt-link>
             </div>
-
+            <div>
+              <nuxt-link
+                to="/blog"
+                class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
+              >
+                <img
+                  v-if="themeBtn === 'theme-black'"
+                  src="/blog_l.svg"
+                  alt="blog"
+                  class="w-12 h-8 mb-2"
+                />
+                <img v-else src="/blog_d.svg" alt="blog" class="w-12 h-8 mb-2" />
+                <span class="text-xs">Blog</span>
+              </nuxt-link>
+            </div>
             <div>
               <div
                 @click="showMenu=!showMenu"
-                class="flex flex-col transition duration-200 ease-in-out transform hover:-translate-y-1"
+                class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
               >
-                <img v-if="themeBtn === 'theme-black'" src="/hireme_l.svg" alt="hire me" />
-                <img v-else src="/hireme_d.svg" alt="hire me" />
-                <span>Hire Me</span>
+                <img
+                  v-if="themeBtn === 'theme-black'"
+                  src="/hireme_l.svg"
+                  alt="hire me"
+                  class="w-12 h-8 mb-2"
+                />
+                <img v-else src="/hireme_d.svg" alt="hire me" class="w-12 h-8 mb-2" />
+                <span class="text-xs">Hire Me</span>
               </div>
               <button
                 v-if="showMenu"
                 @click="showMenu = false"
                 tabindex="-1"
-                class="fixed inset-0 h-full w-full cursor-default focus:outline-none"
+                class="fixed inset-0 h-full w-full cursor-default"
               ></button>
             </div>
           </div>
@@ -134,7 +170,7 @@
 import hireme from "./hireme.vue";
 export default {
   components: {
-    hireme
+    hireme,
   },
   mounted() {
     this.getTheme();
@@ -143,7 +179,7 @@ export default {
     return {
       themeBtn: String,
       isOpen: false,
-      showMenu: false
+      showMenu: false,
     };
   },
   beforeMount() {
@@ -170,14 +206,11 @@ export default {
         this.isOpen = true;
       }
       lastScrollTop = st <= 0 ? 0 : st;
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
-.nuxt-link-active:hover {
-  transition: 0.3s ease all 0.1s;
-}
 .nuxt-link-exact-active {
   border-bottom: 2px solid #ff4081;
 }

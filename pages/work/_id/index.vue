@@ -24,17 +24,29 @@ export default {
     this.getWorkData(this.$route.fullPath);
   },
   components: {
-    workdetails
+    workdetails,
   },
   computed: {
-    ...mapState(["workDataIndi"])
+    ...mapState(["workDataIndi"]),
   },
   methods: {
     ...mapActions(["loadWorkIndi"]),
     getWorkData(params) {
       this.loadWorkIndi(params);
-    }
-  }
+    },
+  },
+  head() {
+    return {
+      title: "Work -" + this.workDataIndi.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.workDataIndi.description,
+        },
+      ],
+    };
+  },
 };
 </script>
 

@@ -25,16 +25,28 @@ export default {
     this.getWorkData();
   },
   computed: {
-    ...mapState(["workData"])
+    ...mapState(["workData"]),
   },
   components: {
-    myworksection
+    myworksection,
   },
   methods: {
     ...mapActions(["loadWorkData"]),
     getWorkData() {
       this.loadWorkData();
-    }
-  }
+    },
+  },
+  head() {
+    return {
+      title: "Work",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "All my work experiences encapsulated into one section",
+        },
+      ],
+    };
+  },
 };
 </script>

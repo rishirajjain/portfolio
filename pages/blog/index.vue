@@ -2,7 +2,7 @@
   <div class="space-y-4 flex flex-col justify-center items-center">
     <div class="container flex flex-col w-4/5 mb-8">
       <div class="self-start font-bold text-3xl text-txt-pri">Blog</div>
-      <div class="md:grid md:grid-cols-2 md:gap-12 mt-8">
+      <div class="flex flex-col">
         <myblogs
           v-for="blog in blogData"
           :key="blog.id"
@@ -25,16 +25,29 @@ export default {
     this.getBlogData();
   },
   computed: {
-    ...mapState(["blogData"])
+    ...mapState(["blogData"]),
   },
   components: {
-    myblogs
+    myblogs,
   },
   methods: {
     ...mapActions(["loadBlogData"]),
     getBlogData() {
       this.loadBlogData();
-    }
-  }
+    },
+  },
+  head() {
+    return {
+      title: "Blog",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Tracoph - Blog on design, photography, travel, art, entrepreneurship, coding. ",
+        },
+      ],
+    };
+  },
 };
 </script>

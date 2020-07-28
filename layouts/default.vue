@@ -14,12 +14,12 @@ export default {
   },
   data() {
     return {
-      theme: String
+      theme: String,
     };
   },
   components: {
     Nav,
-    Footer
+    Footer,
   },
   methods: {
     getTheme() {
@@ -29,7 +29,7 @@ export default {
       let curr = localStorage.getItem("theme") || "theme-light";
       this.theme = curr === "theme-black" ? "theme-light" : "theme-black";
       localStorage.setItem("theme", this.theme);
-    }
-  }
+    },
+  },
 };
 </script>

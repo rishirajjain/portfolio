@@ -8,6 +8,8 @@
         :title="blogDataIndi.title"
         :content="blogDataIndi.content"
         :type="blogDataIndi.type"
+        :hashtags="blogDataIndi.tags"
+        :publishDate="blogDataIndi.datePub"
       />
     </div>
   </div>
@@ -21,17 +23,29 @@ export default {
     this.getBlogData(this.$route.fullPath);
   },
   components: {
-    blogPosts
+    blogPosts,
   },
   computed: {
-    ...mapState(["blogDataIndi"])
+    ...mapState(["blogDataIndi"]),
   },
   methods: {
     ...mapActions(["loadBlogIndi"]),
     getBlogData(params) {
       this.loadBlogIndi(params);
-    }
-  }
+    },
+  },
+  head() {
+    return {
+      title: this.blogDataIndi.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.blogDataIndi.description,
+        },
+      ],
+    };
+  },
 };
 </script>
 

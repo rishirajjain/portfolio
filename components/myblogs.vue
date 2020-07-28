@@ -1,43 +1,15 @@
 <template>
   <nuxt-link :to="'/blog/' + blogid">
-    <div class="mx-auto py-8 max-w-xl">
+    <div class="my-12">
       <div
-        class="relative overflow-hidden hover:shadow-xl hover:transition ease-in-out duration-500 rounded-lg mb-6 tracking-wide"
+        class="flex flex-col md:flex-row transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-105 mb-6 tracking-wide"
       >
-        <svg
-          class="absolute bottom-0 left-0"
-          viewBox="0 0 375 283"
-          fill="none"
-          style="transform: scale(1.5); opacity: 0.1;"
-        >
-          <rect
-            x="159.52"
-            y="175"
-            width="152"
-            height="152"
-            rx="8"
-            transform="rotate(-45 159.52 175)"
-            fill="white"
-          />
-          <rect
-            y="107.48"
-            width="152"
-            height="152"
-            rx="8"
-            transform="rotate(-45 0 107.48)"
-            fill="white"
-          />
-        </svg>
-        <div class="md:flex-shrink-0 bg-background-crd">
-          <img
-            :src="img"
-            alt="cover pictures"
-            class="relative w-full h-64 rounded-lg rounded-b-none"
-          />
+        <div class="bg-background-crd rounded-lg rounded-r-none">
+          <img :src="img" alt="cover picture" class="w-64 h-64" />
         </div>
-        <div class="p-8 bg-white rounded-b-lg">
+        <div class="p-8 bg-white rounded-lg rounded-l-none">
           <h2 class="font-bold text-2xl text-gray-800 tracking-normal">{{ title }}</h2>
-          <p class="text-sm text-gray-700 break-word">{{ description }}</p>
+          <p class="text-sm text-gray-700 mt-6 break-word">{{ description }}</p>
         </div>
       </div>
     </div>
@@ -46,6 +18,6 @@
 
 <script>
 export default {
-  props: ["title", "description", "img", "blogid"]
+  props: ["title", "description", "img", "blogid"],
 };
 </script>

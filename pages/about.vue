@@ -15,7 +15,7 @@
         <p class="text-txt-sec text-xl font-semibold self-start my-12">
           Rishi is passionate about making sure that systems, interface, semantics, and graphics are human-friendly, aesthetically pleasing, emotive, clear, and usable. He has recently worked in a product company as a Frontend Developer. From workflow diagrams to detailed user interface mockups, Rishi loves crafting on-screen experiences.
           <br />
-          <br />He enjoys never being satisfied with his own work. Photography, traveling, and reading are some of the things you'd often find him doing. Peep the resume or check out my LinkedIn page to take a closer look at my work history and whatnot.
+          <br />Photography, traveling, and reading are some of the things you'd often find him doing. Peep the resume or check out my LinkedIn page to take a closer look at my work history and whatnot.
         </p>
       </div>
 
@@ -27,5 +27,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      title: "About - Rishi Raj Jain",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "A little bit of information about Rishi Raj Jain (UI/UX designer). Read on to find out more about me and what I can do for you.",
+        },
+      ],
+    };
+  },
+};
 </script>

@@ -56,7 +56,9 @@ export const actions = {
               title: wp.content.title,
               description: wp.content.description,
               img: wp.content.displayImage,
-              shortdes: wp.content.shortdes
+              shortdes: wp.content.shortdes,
+              tags: wp.content.hashtags,
+              datePub: wp.content.datePub
             };
           })
         );
@@ -88,7 +90,9 @@ export const actions = {
         commit("SET_DATA_B_INDI", {
           title: res.data.story.content.title,
           content: res.data.story.content.content,
-          type: res.data.story.content.type
+          type: res.data.story.content.type,
+          tags: res.data.story.content.hashtags.tbody,
+          datePub: res.data.story.content.datePub
         });
       });
   }

@@ -6,16 +6,26 @@
           href="https://www.linkedin.com/in/rishiraj-jain"
           class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center px-2"
           target="_blank"
+          rel="noreferrer"
         >
-          <img src="/social/linkedin.svg" class="w-64 h-6" alt="linkedIn profile" />
+          <img
+            src="/social/linkedin.svg"
+            class="w-64 h-6"
+            alt="linkedIn profile"
+          />
           <p class="text-xs">LinkedIn</p>
         </a>
         <a
           href="https://twitter.com/rishirajjain98"
           class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center px-2"
           target="_blank"
+          rel="noreferrer"
         >
-          <img src="/social/twitter.svg" class="w-64 h-6" alt="twitter profile" />
+          <img
+            src="/social/twitter.svg"
+            class="w-64 h-6"
+            alt="twitter profile"
+          />
           <p class="text-xs">Twitter</p>
         </a>
 
@@ -23,6 +33,7 @@
           href="https://github.com/rishirajjain"
           class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center px-2"
           target="_blank"
+          rel="noreferrer"
         >
           <img src="/social/github.svg" class="w-64 h-6" alt="github profile" />
           <p class="text-xs">Github</p>
@@ -32,8 +43,13 @@
           href="https://www.instagram.com/rish._/"
           class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center px-2"
           target="_blank"
+          rel="noreferrer"
         >
-          <img src="/social/instagram.svg" class="w-64 h-6" alt="instagram profile" />
+          <img
+            src="/social/instagram.svg"
+            class="w-64 h-6"
+            alt="instagram profile"
+          />
           <p class="text-xs">Instagram</p>
         </a>
       </div>

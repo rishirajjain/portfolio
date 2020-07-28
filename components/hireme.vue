@@ -37,7 +37,9 @@
               role="menuitem"
             >Contact Me</a>
             <a
-              href="#"
+              href="https://docs.google.com/document/d/1JcDdPgwZYYAt6B574EY3fc__xwqjt-Pz7LD29I_w72I/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
               class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
               role="menuitem"
             >Download Resume</a>
@@ -52,9 +54,9 @@
 export default {
   data() {
     return {
-      showMenu: false
+      showMenu: false,
     };
-  }
+  },
 };
 </script>
 

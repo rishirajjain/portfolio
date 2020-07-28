@@ -11,11 +11,11 @@
         <p class="mt-4">I'm a UI/UX designer</p>
         <!-- End -->
         <!-- Work Section-->
-        <p class="text-xs mt-8 font-bold">Latest Work</p>
+        <p class="text-xs mt-8 font-bold">Featured Work</p>
         <div class="flex flex-col md:flex-row md:space-x-4">
-          <div v-for="(work,index) in workData" :key="work.id">
+          <div v-for="work in workData" :key="work.id">
             <mywork
-              v-if="index<3"
+              v-if="work.id=='frrole' || work.id=='micro-interactions' || work.id=='portfolio-version-3'"
               :title="work.title"
               :shortdes="work.shortdes"
               :id="work.id"
@@ -50,16 +50,16 @@ export default {
     this.getWorkData();
   },
   components: {
-    mywork
+    mywork,
   },
   computed: {
-    ...mapState(["workData"])
+    ...mapState(["workData"]),
   },
   methods: {
     ...mapActions(["loadWorkData"]),
     getWorkData() {
       this.loadWorkData();
-    }
-  }
+    },
+  },
 };
 </script>
