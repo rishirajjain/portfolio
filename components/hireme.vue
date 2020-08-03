@@ -29,18 +29,18 @@
       </div>
 
       <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg" v-if="showMenu">
-        <div class="rounded-md bg-white shadow-xs">
+        <div class="rounded-md bg-background-crdLig shadow-xs">
           <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             <a
               href="mailto:rishirajjain98@gmail.com?subject=Regarding an offer at {Insert Company name}&body=Hey Rishi, "
-              class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+              class="block text-txt-pri px-4 py-2 text-sm leading-5 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
               role="menuitem"
             >Contact Me</a>
             <a
               href="https://docs.google.com/document/d/1JcDdPgwZYYAt6B574EY3fc__xwqjt-Pz7LD29I_w72I/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+              class="block px-4 text-txt-pri py-2 text-sm leading-5 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
               role="menuitem"
             >Download Resume</a>
           </div>

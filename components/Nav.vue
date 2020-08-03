@@ -2,10 +2,23 @@
   <nav class="text-base text-txt-pri p-8 w-full">
     <div class="hidden md:block">
       <div class="flex justify-end">
+        <!-- <div class="flex items-center justify-around">
+          <nuxt-link to="/home" class="logoStyle">
+            <img
+              v-if="themeBtn === 'theme-black'"
+              src="/logoMain_l.svg"
+              alt="Tracoph Logo"
+              class="w-8"
+            />
+            <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />
+          </nuxt-link>
+          <div class="logoText ml-2 text-lg">Tracoph</div>
+        </div>-->
+
         <div class="flex justify-end container w-4/5">
-          <ul class="flex space-x-16 justify-center items-center px-10">
+          <ul class="flex space-x-12 justify-center items-center px-10">
             <li>
-              <nuxt-link to="/">Home</nuxt-link>
+              <nuxt-link to="/home">Home</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/work">Work</nuxt-link>
@@ -54,7 +67,7 @@
           class="absolute bottom-0 right-0 origin-bottom-left mb-24 w-56 z-30 rounded-md shadow-lg"
           v-if="showMenu"
         >
-          <div class="rounded-md bg-white shadow-xs">
+          <div class="rounded-md bg-background-crdLig shadow-xs">
             <div
               class="py-1"
               role="menu"
@@ -63,14 +76,14 @@
             >
               <a
                 href="mailto:rishirajjain98@gmail.com?subject=Regarding an offer at {Insert Company name}&body=Hey Rishi, "
-                class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900"
+                class="block text-txt-pri px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900"
                 role="menuitem"
               >Contact Me</a>
               <a
                 href="https://docs.google.com/document/d/1JcDdPgwZYYAt6B574EY3fc__xwqjt-Pz7LD29I_w72I/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
-                class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900"
+                class="block text-txt-pri px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900"
                 role="menuitem"
               >Download Resume</a>
             </div>
@@ -80,7 +93,7 @@
           <div class="flex justify-between items-center bg-text-ux text-base text-txt-pri">
             <div>
               <nuxt-link
-                to="/"
+                to="/home"
                 class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
               >
                 <img
@@ -211,7 +224,13 @@ export default {
 };
 </script>
 <style scoped>
-.nuxt-link-exact-active {
+.nuxt-link-active {
   border-bottom: 2px solid #ff4081;
+}
+.logoStyle {
+  border-bottom: none;
+}
+.logoText {
+  font-family: "Montserrat Alternates";
 }
 </style>

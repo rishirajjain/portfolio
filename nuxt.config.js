@@ -11,6 +11,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: "static",
+  loading: "~/components/loading.vue",
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -20,6 +21,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "og:description",
+        name: "description",
+        content:
+          "Portfolio of Rishi Raj Jain, I also Blog about UI/UX and some things that I find interesting. "
+      },
       {
         hid: "description",
         name: "description",
@@ -34,6 +41,12 @@ export default {
         href: "https://fonts.googleapis.com/css2?family=Montserrat"
       }
     ]
+    // link: [
+    //   {
+    //     rel: "stylesheet",
+    //     href: "https://fonts.googleapis.com/css2?family=Montserrat+Alternates"
+    //   }
+    // ]
   },
 
   generate: {
@@ -96,8 +109,6 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
-    // Doc: https://github.com/nuxt/content
-    "@nuxt/content",
     [
       "storyblok-nuxt",
       {
@@ -118,7 +129,6 @@ export default {
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
    */
-  content: {},
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

@@ -57,7 +57,7 @@ export const actions = {
               description: wp.content.description,
               img: wp.content.displayImage,
               shortdes: wp.content.shortdes,
-              tags: wp.content.hashtags,
+              tags: wp.content.hashtags.tbody,
               datePub: wp.content.datePub
             };
           })

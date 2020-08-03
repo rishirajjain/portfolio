@@ -17,9 +17,13 @@
         <!-- Work Section-->
         <p class="text-xs mt-10 font-bold">Featured Work</p>
         <div class="grid lg:grid-cols-3 lg:gap-4">
-          <div v-for="work in workData" :key="work.id">
+          <div v-for="(work) in workData" :key="work.id">
             <mywork
-              v-if="work.id=='frrole' || work.id=='micro-interactions' || work.id=='portfolio-version-3'"
+              v-if="
+                work.id == 'frrole' ||
+                  work.id == 'micro-interactions' ||
+                  work.id == 'portfolio-version-3'
+              "
               :title="work.title"
               :shortdes="work.shortdes"
               :id="work.id"

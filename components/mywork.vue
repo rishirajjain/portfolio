@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="'/work/' + id">
     <div
-      class="flex-shrink-0 w-56 mt-4 relative overflow-hidden bg-background-crd rounded-lg max-w-xs shadow-lg"
+      class="flex-shrink-0 w-48 mt-4 relative overflow-hidden transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-background-crd rounded-lg max-w-xs shadow-lg"
     >
       <svg
         class="absolute bottom-0 left-0"
@@ -31,9 +31,9 @@
         <img class="relative w-24 h-16" :src="img" alt />
       </div>
       <div class="relative text-white px-4 pb-4">
-        <span class="block opacity-75 -mb-1">{{shortdes}}</span>
+        <span class="block opacity-75 -mb-1 text-xs">{{shortdes}}</span>
         <div class="flex flex-col justify-between">
-          <h2 class="text-white text-xl font-semibold">{{ title }}</h2>
+          <h2 class="text-white text-base mt-2 font-semibold">{{ title }}</h2>
         </div>
       </div>
     </div>
@@ -42,6 +42,6 @@
 
 <script>
 export default {
-  props: ["title", "shortdes", "id", "img"]
+  props: ["title", "shortdes", "id", "img"],
 };
 </script>

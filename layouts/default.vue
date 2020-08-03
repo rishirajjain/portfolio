@@ -1,7 +1,11 @@
 <template>
-  <div class="content-wrapper bg-background-pri" :class="theme">
+  <div
+    class="content-wrapper bg-background-pri bg-no-repeat bg-left-top"
+    :class="theme"
+    style="background-image:url('uiux.svg')"
+  >
     <Nav />
-    <Nuxt style="background-image:url('uiux.svg')" class="bg-no-repeat bg-left-top" />
+    <Nuxt />
     <Footer />
   </div>
 </template>

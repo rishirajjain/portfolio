@@ -10,6 +10,8 @@
           :description="blog.description"
           :blogid="blog.id"
           :img="blog.img"
+          :hashtags="blog.tags"
+          :publishDate="blog.datePub"
         />
       </div>
     </div>
@@ -44,7 +46,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Tracoph - Blog on design, photography, travel, art, entrepreneurship, coding. ",
+            "Tracoph - Blog on design, photography, travel, art, entrepreneurship, coding.",
         },
       ],
     };
