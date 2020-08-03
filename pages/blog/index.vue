@@ -3,6 +3,7 @@
     <div class="container flex flex-col w-4/5 mb-8">
       <div class="self-start font-bold text-3xl text-txt-pri">Blog</div>
       <div class="flex flex-col">
+        <p class="text-sm font-semibold mt-8">Latest Posts</p>
         <myblogs
           v-for="blog in blogData"
           :key="blog.id"
@@ -46,7 +47,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Tracoph - Blog on design, photography, travel, art, entrepreneurship, coding.",
+            "Blog on design, photography, travel, art, entrepreneurship, coding.",
         },
       ],
     };

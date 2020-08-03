@@ -118,8 +118,13 @@ export default {
             : "4QK3DDvoBN5f1598c4ziTQtt",
         cacheProvider: "memory"
       }
-    ]
+    ],
+    "@nuxtjs/sitemap"
   ],
+  sitemap: {
+    hostname: "https://rishirajjain.com",
+    gzip: true
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

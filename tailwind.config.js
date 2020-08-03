@@ -1,5 +1,6 @@
 module.exports = {
   important: true,
+  purge: ["./pages/**/*", "./layouts/**/*", "./components/**/*"],
   theme: {
     fontFamily: {
       display: ["Montserrat", "sans-serif"],

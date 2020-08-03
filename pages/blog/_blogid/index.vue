@@ -10,6 +10,7 @@
         :type="blogDataIndi.type"
         :hashtags="blogDataIndi.tags"
         :publishDate="blogDataIndi.datePub"
+        :desc="blogDataIndi.description"
       />
     </div>
   </div>
@@ -34,18 +35,18 @@ export default {
       this.loadBlogIndi(params);
     },
   },
-  head() {
-    return {
-      title: this.blogDataIndi.title,
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: this.blogDataIndi.description,
-        },
-      ],
-    };
-  },
+  // head() {
+  //   return {
+  //     title: this.blogDataIndi.title,
+  //     meta: [
+  //       {
+  //         hid: "description",
+  //         name: "description",
+  //         content: this.blogDataIndi.description,
+  //       },
+  //     ],
+  //   };
+  // },
 };
 </script>
 

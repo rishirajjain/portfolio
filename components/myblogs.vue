@@ -1,16 +1,22 @@
 <template>
   <div class="my-12 mt-8">
-    <p class="text-sm font-semibold mb-8">Latest Posts</p>
     <nuxt-link :to="'/blog/' + blogid">
       <div
         class="flex flex-col md:flex-row transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-105 mb-6 tracking-wide"
       >
         <div
-          class="flex justify-center bg-background-crd rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
+          class="flex justify-center h-64 md:h-auto w-full bg-no-repeat bg-center bg-cover bg-background-crd rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
+          :style="{ 'background-image': 'url(' + img + ')' }"
         >
-          <img :src="img" alt="cover picture" class="w-64 h-64" />
+          <!-- <img
+            :src="img"
+            alt="cover picture"
+            class="rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
+          />-->
         </div>
-        <div class="p-8 bg-white rounded-t-none rounded-b-lg md:rounded-l-none md:rounded-r-lg">
+        <div
+          class="p-8 lg:w-3/4 bg-white rounded-t-none rounded-b-lg md:rounded-l-none md:rounded-r-lg"
+        >
           <h2 class="font-bold text-2xl text-gray-800 tracking-normal">{{ title }}</h2>
           <p class="text-sm text-gray-700 mt-6 break-word font-medium">{{ description }}</p>
 
