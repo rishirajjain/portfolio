@@ -89,7 +89,6 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: "~plugins/ga.js", mode: "client" }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -109,6 +108,9 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "vue-social-sharing/nuxt",
+    "@nuxtjs/robots",
+    "@nuxtjs/google-analytics",
     [
       "storyblok-nuxt",
       {
@@ -124,6 +126,9 @@ export default {
   sitemap: {
     hostname: "https://rishirajjain.com",
     gzip: true
+  },
+  googleAnalytics: {
+    id: "UA-173900177-1"
   },
   /*
    ** Axios module configuration

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4 bg-white rounded-md shadow p-6 md:p-16">
+  <div class="mt-4 bg-white rounded-md shadow p-10 md:p-16">
     <div>
       <h2 class="text-gray-800 text-3xl font-semibold mb-8">{{ title }}</h2>
 
@@ -8,20 +8,20 @@
       >
         <div class="flex flex-col space-y-4">
           <h4 class="font-bold text-sm text-black">Type</h4>
-          <p>{{type}}</p>
+          <p>{{ type }}</p>
         </div>
         <div class="flex flex-col space-y-4">
           <h4 class="font-bold text-sm text-black">Duration</h4>
-          <p>{{duration}}</p>
+          <p>{{ duration }}</p>
         </div>
         <div class="flex flex-col space-y-4">
           <h4 class="font-bold text-sm text-black">My Role</h4>
-          <p>{{myrole}}</p>
+          <p>{{ myrole }}</p>
         </div>
         <div class="flex flex-col space-y-4">
           <h4 class="font-bold text-sm text-black">What I did</h4>
           <div>
-            <p class="whitespace-pre-line">{{whatidid}}</p>
+            <p class="whitespace-pre-line">{{ whatidid }}</p>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default {
       return this.content
         ? this.$storyapi.richTextResolver.render(this.content)
         : "";
-    },
-  },
+    }
+  }
 };
 </script>

@@ -1,11 +1,13 @@
 <template>
   <div class="space-y-4 flex flex-col justify-center items-center">
-    <div class="container flex flex-col w-4/5 space-y-12 mb-8 z-30">
+    <div class="container flex flex-col w-11/12 md:w-4/5 space-y-12 mb-8 z-30">
       <div class="self-start underline text-xl">
-        <nuxt-link to="/blog" class="text-txt-pri">Back</nuxt-link>
+        <nuxt-link to="/blog" class="text-txt-pri cursor-pointer"
+          >Back</nuxt-link
+        >
       </div>
       <blogPosts
-        :title="blogDataIndi.title"
+        :head="blogDataIndi.title"
         :content="blogDataIndi.content"
         :type="blogDataIndi.type"
         :hashtags="blogDataIndi.tags"
@@ -24,17 +26,17 @@ export default {
     this.getBlogData(this.$route.fullPath);
   },
   components: {
-    blogPosts,
+    blogPosts
   },
   computed: {
-    ...mapState(["blogDataIndi"]),
+    ...mapState(["blogDataIndi"])
   },
   methods: {
     ...mapActions(["loadBlogIndi"]),
     getBlogData(params) {
       this.loadBlogIndi(params);
-    },
-  },
+    }
+  }
   // head() {
   //   return {
   //     title: this.blogDataIndi.title,

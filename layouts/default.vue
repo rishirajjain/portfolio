@@ -2,7 +2,7 @@
   <div
     class="content-wrapper bg-background-pri bg-no-repeat bg-left-top"
     :class="theme"
-    style="background-image:url('uiux.svg')"
+    style="background-image:url('/uiux.svg')"
   >
     <Nav />
     <Nuxt />
@@ -18,12 +18,12 @@ export default {
   },
   data() {
     return {
-      theme: String,
+      theme: String
     };
   },
   components: {
     Nav,
-    Footer,
+    Footer
   },
   methods: {
     getTheme() {
@@ -33,7 +33,7 @@ export default {
       let curr = localStorage.getItem("theme") || "theme-light";
       this.theme = curr === "theme-black" ? "theme-light" : "theme-black";
       localStorage.setItem("theme", this.theme);
-    },
-  },
+    }
+  }
 };
 </script>

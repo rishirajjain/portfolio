@@ -19,7 +19,11 @@
         <div class="grid lg:grid-cols-3 lg:gap-4">
           <div v-for="work in workData" :key="work.id">
             <mywork
-              v-if="work.id=='frrole' || work.id=='micro-interactions' || work.id=='portfolio-version-3'"
+              v-if="
+                work.id == 'frrole' ||
+                  work.id == 'micro-interactions' ||
+                  work.id == 'portfolio-version-3'
+              "
               :title="work.title"
               :shortdes="work.shortdes"
               :id="work.id"
@@ -31,11 +35,14 @@
 
         <!-- End -->
         <div class="space-x-4 mt-8 mb-16 md:self-end">
-          <nuxt-link to="work" class="hover:underline text-txt-sec">See more work</nuxt-link>
+          <nuxt-link to="work" class="hover:underline text-txt-sec"
+            >See more work</nuxt-link
+          >
           <a
             href="mailto:rishirajjain98@gmail.com?subject=Regarding an offer at {Insert Company name}&body=Hey Rishi, "
             class="btncol text-white focus:outline-none focus:shadow-outline px-8 py-2 shadow rounded-full"
-          >Hire Me</a>
+            >Hire Me</a
+          >
         </div>
       </div>
       <div class="hidden self-center w-1/4 lg:block md:opacity-75">
@@ -54,16 +61,16 @@ export default {
     this.getWorkData();
   },
   components: {
-    mywork,
+    mywork
   },
   computed: {
-    ...mapState(["workData"]),
+    ...mapState(["workData"])
   },
   methods: {
     ...mapActions(["loadWorkData"]),
     getWorkData() {
       this.loadWorkData();
-    },
-  },
+    }
+  }
 };
 </script>
