@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap justify-center items-center">
+  <div class="flex flex-wrap justify-center height">
     <div class="container flex justify-between w-4/5">
       <!-- Name intro -->
       <div class="text-txt-pri flex flex-col self-start">
@@ -11,19 +11,14 @@
           Hi, I'm
           <span class="font-bold">Rishi Raj Jain</span>
           a
-          <span class="name text-xl font-bold">UI/UX designer</span>
+          <span class="name text-xl font-bold">Product designer</span>
         </p>
         <!-- End -->
         <!-- Work Section-->
         <p class="text-xs mt-10 font-bold">Featured Work</p>
-        <div class="grid lg:grid-cols-3 lg:gap-4">
-          <div v-for="(work) in workData" :key="work.id">
+        <div class="flex flex-wrap justify-between md:space-x-4">
+          <div v-for="work in modifyData()" :key="work.id">
             <mywork
-              v-if="
-                work.id == 'frrole' ||
-                  work.id == 'micro-interactions' ||
-                  work.id == 'portfolio-version-3'
-              "
               :title="work.title"
               :shortdes="work.shortdes"
               :id="work.id"
@@ -42,7 +37,7 @@
           >Hire Me</a>
         </div>
       </div>
-      <div class="hidden self-center w-1/4 lg:block md:opacity-75">
+      <div class="hidden self-center w-1/4 lg:block">
         <illustration />
       </div>
     </div>
@@ -67,6 +62,20 @@ export default {
     ...mapActions(["loadWorkData"]),
     getWorkData() {
       this.loadWorkData();
+    },
+    modifyData() {
+      var items = this.workData;
+
+      var result = Object.keys(items)
+        .map((key) => items[key]) // turn an array of keys into array of items.
+        .filter((item) => {
+          return (
+            item.id == "frrole" ||
+            item.id == "micro-interactions" ||
+            item.id == "portfolio-version-3"
+          );
+        });
+      return result;
     },
   },
 };

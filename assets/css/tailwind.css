@@ -20,8 +20,8 @@ button:focus {
 }
 
 .theme-light {
-  --bg-background-pri: #f5f5f5;
-  --bg-background-sec: #e0e0e0;
+  --bg-background-pri: #fafafa;
+  --bg-background-sec: #d6d6d6;
   --bg-background-ter: #c0c0c0;
 
   --bg-card-light: #ffffff;
@@ -37,7 +37,16 @@ button:focus {
     transparent 80%
   );
 }
-
+@media only screen and (min-width: 1024px) {
+  .height {
+    height: 85vh;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .height {
+    height: 75vh;
+  }
+}
 .name {
   color: #ff4081;
 }

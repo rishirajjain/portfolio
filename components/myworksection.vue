@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="'/work/' + id">
-    <div class="mx-auto py-8 max-w-xl">
+    <div class="mx-auto py-8">
       <div
         class="relative overflow-hidden hover:shadow-xl hover:transition ease-in-out duration-500 rounded-lg mb-6 tracking-wide"
       >
@@ -36,7 +36,9 @@
           />
         </div>
         <div class="p-8 bg-white rounded-b-lg">
-          <h2 class="font-bold text-2xl text-gray-800 tracking-normal">{{ title }}</h2>
+          <h2 class="font-bold text-2xl text-gray-800 tracking-normal">
+            {{ title }}
+          </h2>
           <p class="text-sm text-gray-700 break-word">{{ description }}</p>
         </div>
       </div>
@@ -49,4 +51,3 @@ export default {
   props: ["title", "description", "img", "id"]
 };
 </script>
-
