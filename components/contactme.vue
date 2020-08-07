@@ -2,17 +2,30 @@
   <!-- Form field -->
 
   <div
-    class="flex w-full justify-center bg-background-ter items-center py-12 bg-no-repeat bg-left bg-contain"
-    style="background-image:url('bgdesign.svg')"
+    class="flex w-full justify-center bg-background-ter items-center py-12 bg-no-repeat bg-center bg-contain"
+    style="background-image:url('/bgdesign.svg')"
   >
     <div class="w-4/5 container flex flex-col md:flex-row">
       <div class="h-full w-full flex flex-col justify-center items-center">
         <div class="mb-1">
           <h3 class="text-5xl font-bold text-txt-pri">Contact</h3>
         </div>
-        <img src="contactme.svg" alt="contact me illustration" />
+        <img src="/contactme.svg" alt="contact me illustration" />
       </div>
-      <form class="w-full h-full p-8 bg-white rounded shadow" action="POST" data-netlify="true">
+      <form
+        class="w-full h-full p-8 bg-white rounded shadow"
+        name="contactForm"
+        action="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you're human:
+            <input name="bot-field" />
+          </label>
+        </p>
+        <input type="hidden" name="form-name" value="contactForm" />
         <div class="md:flex md:items-center mb-6">
           <div class="md:w-1/4">
             <label class="block font-bold mb-1" for="inline-full-name">Name</label>
@@ -54,19 +67,13 @@
             ></textarea>
           </div>
         </div>
-        <div class="md:flex md:items-center mb-6">
-          <div class="md:w-1/4"></div>
-          <div class="md:w-4/5">
-            <div data-netlify-recaptcha="true"></div>
-          </div>
-        </div>
 
         <div class="md:flex md:items-center">
           <div class="md:w-1/4"></div>
           <div class="md:w-4/5">
             <button
               class="btncol text-white focus:outline-none focus:shadow-outline w-full px-8 py-2 shadow rounded"
-              type="button"
+              type="submit"
             >Submit</button>
           </div>
         </div>

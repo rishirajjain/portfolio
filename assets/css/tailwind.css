@@ -29,13 +29,13 @@ button:focus {
   --txt-pri: black;
   --txt-sec: rgb(27, 27, 27);
 }
-.bg-circle {
+/* .bg-circle {
   background: linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.897) 0%,
     transparent 80%
   );
-}
+} */
 
 .name {
   color: #ff4081;

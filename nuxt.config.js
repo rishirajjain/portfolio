@@ -106,11 +106,13 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    "@nuxtjs/google-analytics",
     "@nuxtjs/axios",
+
     "@nuxtjs/pwa",
     "vue-social-sharing/nuxt",
     "@nuxtjs/robots",
-    "@nuxtjs/google-analytics",
+
     [
       "storyblok-nuxt",
       {
