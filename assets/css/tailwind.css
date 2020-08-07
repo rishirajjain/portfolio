@@ -11,7 +11,7 @@ button:focus {
 }
 .theme-black {
   --bg-background-pri: #000a12;
-  --bg-background-sec: #263238;
+  --bg-background-sec: #3e4c52;
   --bg-background-ter: #263238;
   --bg-card: #fb6084;
   --bg-card-light: #013158;
@@ -22,10 +22,9 @@ button:focus {
 .theme-light {
   --bg-background-pri: #fafafa;
   --bg-background-sec: #d6d6d6;
-  --bg-background-ter: #c0c0c0;
+  --bg-background-ter: #f3f3f3;
 
   --bg-card-light: #ffffff;
-  /* --bg-card: #50b9ff; */
   --bg-card: #000a12;
   --txt-pri: black;
   --txt-sec: rgb(27, 27, 27);
@@ -37,16 +36,7 @@ button:focus {
     transparent 80%
   );
 }
-@media only screen and (min-width: 1024px) {
-  .height {
-    height: 85vh;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .height {
-    height: 75vh;
-  }
-}
+
 .name {
   color: #ff4081;
 }

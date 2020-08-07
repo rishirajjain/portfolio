@@ -41,11 +41,14 @@
         <illustration />
       </div>
     </div>
+    <contactme />
   </div>
 </template>
 
 <script>
 import mywork from "@/components/mywork";
+import contactme from "@/components/contactme";
+
 import illustration from "@/components/illustration";
 import { mapActions, mapState } from "vuex";
 export default {
@@ -54,6 +57,7 @@ export default {
   },
   components: {
     mywork,
+    contactme,
   },
   computed: {
     ...mapState(["workData"]),

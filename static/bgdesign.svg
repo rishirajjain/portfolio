@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="580" height="643" viewBox="0 0 580 643">
+  <defs>
+    <clipPath id="clip-illust">
+      <rect width="580" height="643"/>
+    </clipPath>
+  </defs>
+  <g id="illust" clip-path="url(#clip-illust)">
+    <g id="Group_8" data-name="Group 8" transform="translate(-449 -213)" opacity="0.25">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M106.786,526.933H0l195.78-268.821L10.539-.167H121.23L247.921,176.068l55.842,79.75L106.786,526.933Z" transform="translate(513.228 277.601)" fill="#ff4081" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M106.786,526.933H0l195.78-268.821L10.539-.167H121.23L247.921,176.068l55.842,79.75L106.786,526.933Z" transform="translate(696.132 277.601)" fill="#ff4081" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
