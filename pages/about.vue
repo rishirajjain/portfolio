@@ -11,7 +11,6 @@
           <br />He commands the cupid, makes users fall in love with the product.
           He strongly believes in providing value and simplifying people's lives.
         </h1>
-        <h3 class="text-txt-sec text-2xl md:text-2xl self-start mt-12 font-bold">More about Rishi</h3>
         <p class="text-txt-sec text-base md:text-xl font-semibold self-start my-12">
           Rishi is passionate about making sure that systems, interface, semantics, and graphics are human-friendly, aesthetically pleasing, emotive, clear, and usable. He has recently worked in a product company as a Frontend Developer. From workflow diagrams to detailed user interface mockups, Rishi loves crafting on-screen experiences.
           <br />

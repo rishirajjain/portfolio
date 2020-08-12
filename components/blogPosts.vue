@@ -1,22 +1,26 @@
 <template>
   <div class="mt-4 bg-white rounded-md shadow p-8">
     <div>
-      <div class="flex flex-wrap justify-between items-center">
+      <div class="flex flex-col flex-wrap justify-between">
         <h2 class="text-gray-800 text-3xl font-semibold">{{ head }}</h2>
+        <p class="text-xs mt-2">Published on {{ formatDate(publishDate) }}</p>
       </div>
 
-      <div class="mt-8 text-base">
+      <div class="text-base">
+        <div
+          class="w-full h-64 bg-contain mb-8 bg-center bg-no-repeat"
+          :style="{ 'background-image': 'url(' + coverImg + ')' }"
+        ></div>
         <div class="space-y-8" v-html="richtext"></div>
       </div>
       <hr class="mt-16 mb-4" />
       <div class="flex space-x-4 items-center">
         <img src="/rishi.jpg" alt="author" class="rounded-full w-12 h-12 self-start" />
         <div class="flex flex-col">
-          <p class="font-bold text-base">
-            Words by,
-            <br />Rishi Raj Jain
-          </p>
-          <p class="text-xs">Published on {{ formatDate(publishDate) }}</p>
+          <p class>Words by,</p>
+
+          <p class="font-bold mt-2">Rishi Raj Jain</p>
+
           <div class="flex mt-8">
             <ShareNetwork
               class="cursor-pointer flex transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
@@ -73,7 +77,15 @@ export default {
       fullPath: this.$route.path,
     };
   },
-  props: ["head", "content", "type", "hashtags", "publishDate", "desc"],
+  props: [
+    "head",
+    "content",
+    "type",
+    "hashtags",
+    "publishDate",
+    "desc",
+    "coverImg",
+  ],
   computed: {
     richtext() {
       return this.content

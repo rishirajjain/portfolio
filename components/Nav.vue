@@ -23,11 +23,12 @@
             <li>
               <nuxt-link to="/work">Work</nuxt-link>
             </li>
-            <li>
-              <nuxt-link to="/about">About</nuxt-link>
-            </li>
+
             <li>
               <nuxt-link to="/blog">Blog</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/about">About</nuxt-link>
             </li>
             <li>
               <hireme />
@@ -121,21 +122,7 @@
                 <span class="text-xs">Work</span>
               </nuxt-link>
             </div>
-            <div>
-              <nuxt-link
-                to="/about"
-                class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
-              >
-                <img
-                  v-if="themeBtn === 'theme-black'"
-                  src="/about_l.svg"
-                  alt="about"
-                  class="w-12 h-8 mb-2"
-                />
-                <img v-else src="/about_b.svg" alt="about" class="w-12 h-8 mb-2" />
-                <span class="text-xs">About</span>
-              </nuxt-link>
-            </div>
+
             <div>
               <nuxt-link
                 to="/blog"
@@ -149,6 +136,21 @@
                 />
                 <img v-else src="/blog_d.svg" alt="blog" class="w-12 h-8 mb-2" />
                 <span class="text-xs">Blog</span>
+              </nuxt-link>
+            </div>
+            <div>
+              <nuxt-link
+                to="/about"
+                class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
+              >
+                <img
+                  v-if="themeBtn === 'theme-black'"
+                  src="/about_l.svg"
+                  alt="about"
+                  class="w-12 h-8 mb-2"
+                />
+                <img v-else src="/about_b.svg" alt="about" class="w-12 h-8 mb-2" />
+                <span class="text-xs">About</span>
               </nuxt-link>
             </div>
             <div>

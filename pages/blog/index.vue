@@ -1,7 +1,8 @@
 <template>
   <div class="space-y-4 flex flex-col justify-center items-center">
     <div class="container flex flex-col w-4/5 mb-8">
-      <div class="self-start font-bold text-3xl text-txt-pri">Blog</div>
+      <div class="self-start font-bold text-3xl text-txt-pri">Tracoph - Blog</div>
+      <div class="mt-3 name font-bold">Travel, Code, Photography, Design, Entrepreneurship</div>
       <div class="flex flex-col">
         <p class="text-sm font-semibold mt-8">Latest Posts</p>
         <myblogs

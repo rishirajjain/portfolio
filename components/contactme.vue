@@ -6,7 +6,7 @@
     style="background-image:url('/bgdesign.svg')"
   >
     <div class="w-4/5 container flex flex-col md:flex-row">
-      <div class="h-full w-full flex flex-col justify-center items-center">
+      <div class="h-full w-full flex flex-col">
         <div class="mb-1">
           <h3 class="text-5xl font-bold text-txt-pri">Contact</h3>
         </div>
@@ -36,7 +36,8 @@
               id="inline-full-name"
               type="text"
               name="name"
-              placeholder="Jane Doe"
+              placeholder="Name"
+              required
             />
           </div>
         </div>
@@ -50,7 +51,8 @@
               id="inline-email"
               type="email"
               name="email"
-              placeholder="janedoe@gmail.com"
+              placeholder="Email"
+              required
             />
           </div>
         </div>

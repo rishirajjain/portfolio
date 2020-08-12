@@ -87,12 +87,14 @@ export const actions = {
         version: process.env.NODE_ENV == "production" ? "published" : "draft"
       })
       .then(res => {
+        console.log(res);
         commit("SET_DATA_B_INDI", {
           title: res.data.story.content.title,
           content: res.data.story.content.content,
           type: res.data.story.content.type,
           tags: res.data.story.content.hashtags.tbody,
-          datePub: res.data.story.content.datePub
+          datePub: res.data.story.content.datePub,
+          coverImage: res.data.story.content.coverImage.filename
         });
       });
   }

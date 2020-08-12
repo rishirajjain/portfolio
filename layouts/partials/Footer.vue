@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-background-sec text-txt-sec">
-    <div class="flex flex-col justify-center items-center">
-      <div class="flex justify-around mt-8 w-1/2">
+  <div class="text-txt-sec">
+    <div class="flex flex-col justify-center items-center bg-background-sec">
+      <div class="flex justify-around my-8 w-1/2">
         <a
           href="https://www.linkedin.com/in/rishiraj-jain"
           class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
@@ -41,13 +41,12 @@
           <p class="text-xs">Instagram</p>
         </a>
       </div>
-
-      <div class="flex flex-col w-full items-center my-4 justify-center">
-        <div class="w-12 text-center text-sm text-txt-sec">
-          <hr />
-        </div>
-        <p class="text-xs mt-2">All rights reserved &copy; Rishi Raj Jain 2020</p>
+    </div>
+    <div class="flex flex-col w-full items-center justify-center bg-background-ter">
+      <div class="w-12 text-center text-sm text-txt-sec">
+        <hr />
       </div>
+      <p class="text-xs my-2">All rights reserved &copy; Rishi Raj Jain 2020</p>
     </div>
   </div>
 </template>
