@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog/how-qpr-helps-in-suicide-prevention", {data:[{}],fetch:[],mutations:[]});
