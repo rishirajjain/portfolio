@@ -5,7 +5,8 @@
         <span class="rounded-md shadow-sm">
           <button
             type="button"
-            class="pointer-events-auto text-base inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
+            :class="theme=='theme-light'?'hireBtnlight':'hireBtndark'"
+            class="pointer-events-auto text-base inline-flex justify-center w-full rounded-full px-6 py-2 bg-background-pri text-txt-pri leading-5 focus:outline-none transition ease-in-out duration-150"
             @click="showMenu=!showMenu"
             aria-haspopup="true"
             aria-expanded="true"
@@ -52,6 +53,7 @@
 
 <script>
 export default {
+  props: ["theme"],
   data() {
     return {
       showMenu: false,
@@ -60,4 +62,18 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.hireBtnlight {
+  box-shadow: 6px 6px 12px #e6e6e6, -6px -6px 12px #ffffff;
+}
+.hireBtnlight:focus {
+  box-shadow: 6px 6px 12px #e6e6e6 inset, -6px -6px 12px #ffffff inset;
+}
+.hireBtndark {
+  box-shadow: 6px 6px 12px #000407, -6px -6px 12px #00101d;
+}
+.hireBtndark:focus {
+  box-shadow: inset 6px 6px 12px #000407, inset -6px -6px 12px #00101d;
+}
+</style>>
+

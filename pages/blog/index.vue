@@ -4,7 +4,7 @@
       <div class="self-start font-bold text-3xl text-txt-pri">Tracoph - Blog</div>
       <div class="mt-3 name font-bold">Travel, Code, Photography, Design, Entrepreneurship</div>
       <div class="flex flex-col">
-        <p class="text-sm font-semibold mt-8">Latest Posts</p>
+        <p class="text-sm font-semibold mt-8 text-txt-pri">Latest Posts</p>
         <myblogs
           v-for="blog in blogData"
           :key="blog.id"

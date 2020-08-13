@@ -13,7 +13,7 @@ button:focus {
   --bg-background-pri: #000a12;
   --bg-background-sec: #3e4c52;
   --bg-background-ter: #263238;
-  --bg-card: #fb6084;
+  --bg-card: #000a12;
   --bg-card-light: #013158;
   --txt-pri: white;
   --txt-sec: rgb(240, 240, 240);
@@ -29,13 +29,13 @@ button:focus {
   --txt-pri: black;
   --txt-sec: rgb(27, 27, 27);
 }
-/* .bg-circle {
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.897) 0%,
-    transparent 80%
-  );
-} */
+.cardEffLight {
+  box-shadow: 6px 6px 12px #e6e6e6, -6px -6px 12px #ffffff;
+}
+
+.cardEffDark {
+  box-shadow: 6px 6px 12px #000407, -6px -6px 12px #00101d;
+}
 
 .name {
   color: #ff4081;

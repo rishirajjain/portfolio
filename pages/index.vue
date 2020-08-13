@@ -30,11 +30,10 @@
 
         <!-- End -->
         <div class="space-x-4 mt-8 mb-16 md:self-end">
-          <nuxt-link to="work" class="hover:underline text-txt-sec">See more work</nuxt-link>
-          <a
-            href="mailto:rishirajjain98@gmail.com?subject=Regarding an offer at {Insert Company name}&body=Hey Rishi, "
+          <nuxt-link
+            to="work"
             class="btncol text-white focus:outline-none focus:shadow-outline px-8 py-2 shadow rounded-full"
-          >Hire Me</a>
+          >View More</nuxt-link>
         </div>
       </div>
       <div class="hidden self-center w-1/4 lg:block">
@@ -53,6 +52,7 @@ import illustration from "@/components/illustration";
 import { mapActions, mapState } from "vuex";
 export default {
   mounted() {
+    this.getTheme();
     this.getWorkData();
   },
   components: {
@@ -61,11 +61,20 @@ export default {
   },
   computed: {
     ...mapState(["workData"]),
+    ...mapState(["theme"]),
   },
   methods: {
     ...mapActions(["loadWorkData"]),
     getWorkData() {
       this.loadWorkData();
+    },
+    getTheme() {
+      let curr = localStorage.getItem("theme");
+      console.log(this.theme);
+      console.log(curr);
+      if (curr) {
+        console.log(this.theme);
+      }
     },
     modifyData() {
       var items = this.workData;

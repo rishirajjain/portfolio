@@ -1,40 +1,30 @@
 <template>
-  <nav class="text-base text-txt-pri p-8 w-full">
-    <div class="hidden md:block">
-      <div class="flex justify-end">
-        <!-- <div class="flex items-center justify-around">
-          <nuxt-link to="/home" class="logoStyle">
-            <img
-              v-if="themeBtn === 'theme-black'"
-              src="/logoMain_l.svg"
-              alt="Tracoph Logo"
-              class="w-8"
-            />
-            <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />
-          </nuxt-link>
-          <div class="logoText ml-2 text-lg">Tracoph</div>
-        </div>-->
+  <nav class="text-base text-txt-pri py-8 w-full">
+    <div class="hidden md:flex justify-center">
+      <div class="container flex justify-between w-4/5">
+        <nuxt-link to="/home" class="logoStyle">
+          <img
+            v-if="themeBtn === 'theme-black'"
+            src="/logoMain_l.svg"
+            alt="Tracoph Logo"
+            class="w-8"
+          />
+          <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />
+        </nuxt-link>
 
-        <div class="flex justify-end container w-4/5">
-          <ul class="flex space-x-12 justify-center items-center px-10">
-            <li>
-              <nuxt-link to="/home">Home</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/work">Work</nuxt-link>
-            </li>
+        <div class="flex justify-end">
+          <div class="flex space-x-12 justify-center items-center px-10">
+            <nuxt-link to="/home">Home</nuxt-link>
 
-            <li>
-              <nuxt-link to="/blog">Blog</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/about">About</nuxt-link>
-            </li>
-            <li>
-              <hireme />
-            </li>
-          </ul>
-          <div class="self-start tooltip relative">
+            <nuxt-link to="/work">Work</nuxt-link>
+
+            <nuxt-link to="/blog">Blog</nuxt-link>
+
+            <nuxt-link to="/about">About</nuxt-link>
+
+            <hireme :theme="themeBtn" />
+          </div>
+          <div class="flex tooltip relative">
             <p class="tooltip-text">Change theme</p>
             <button @click.prevent="toggleTheme" class>
               <img
@@ -50,8 +40,17 @@
       </div>
     </div>
     <!-- Mobile Nav -->
-    <div class="block md:hidden">
-      <div class="flex items-center justify-end">
+    <div class="flex justify-center md:hidden">
+      <div class="container flex justify-between w-4/5">
+        <nuxt-link to="/home" class="logoStyle">
+          <img
+            v-if="themeBtn === 'theme-black'"
+            src="/logoMain_l.svg"
+            alt="Tracoph Logo"
+            class="w-8"
+          />
+          <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />
+        </nuxt-link>
         <div class="self-start tooltip relative">
           <p class="tooltip-text">Change theme</p>
           <button @click.prevent="toggleTheme" class>
@@ -101,9 +100,9 @@
                   v-if="themeBtn === 'theme-black'"
                   src="/home_l.svg"
                   alt="home"
-                  class="w-12 h-8 mb-2"
+                  class="w-10 h-10 mb-2"
                 />
-                <img v-else src="/home_d.svg" alt="home " class="w-12 h-8 mb-2" />
+                <img v-else src="/home_d.svg" alt="home " class="w-10 h-10 mb-2" />
                 <span class="text-xs">Home</span>
               </nuxt-link>
             </div>
@@ -116,9 +115,9 @@
                   v-if="themeBtn === 'theme-black'"
                   src="/work_l.svg"
                   alt="work"
-                  class="w-12 h-8 mb-2"
+                  class="w-10 h-10 mb-2"
                 />
-                <img v-else src="/work_b.svg" alt="work" class="w-12 h-8 mb-2" />
+                <img v-else src="/work_d.svg" alt="work" class="w-10 h-10 mb-2" />
                 <span class="text-xs">Work</span>
               </nuxt-link>
             </div>
@@ -132,9 +131,9 @@
                   v-if="themeBtn === 'theme-black'"
                   src="/blog_l.svg"
                   alt="blog"
-                  class="w-12 h-8 mb-2"
+                  class="w-10 h-10 mb-2"
                 />
-                <img v-else src="/blog_d.svg" alt="blog" class="w-12 h-8 mb-2" />
+                <img v-else src="/blog_d.svg" alt="blog" class="w-10 h-10 mb-2" />
                 <span class="text-xs">Blog</span>
               </nuxt-link>
             </div>
@@ -147,9 +146,9 @@
                   v-if="themeBtn === 'theme-black'"
                   src="/about_l.svg"
                   alt="about"
-                  class="w-12 h-8 mb-2"
+                  class="w-10 h-10 mb-2"
                 />
-                <img v-else src="/about_b.svg" alt="about" class="w-12 h-8 mb-2" />
+                <img v-else src="/about_d.svg" alt="about" class="w-10 h-10 mb-2" />
                 <span class="text-xs">About</span>
               </nuxt-link>
             </div>
@@ -162,9 +161,9 @@
                   v-if="themeBtn === 'theme-black'"
                   src="/hireme_l.svg"
                   alt="hire me"
-                  class="w-12 h-8 mb-2"
+                  class="w-10 h-10 mb-2"
                 />
-                <img v-else src="/hireme_d.svg" alt="hire me" class="w-12 h-8 mb-2" />
+                <img v-else src="/hireme_d.svg" alt="hire me" class="w-10 h-10 mb-2" />
                 <span class="text-xs">Hire Me</span>
               </div>
               <button
@@ -183,12 +182,17 @@
 
 <script>
 import hireme from "./hireme.vue";
+import { mapActions, mapState } from "vuex";
+
 export default {
   components: {
     hireme,
   },
   mounted() {
     this.getTheme();
+  },
+  computed: {
+    ...mapState(["theme"]),
   },
   data() {
     return {
@@ -204,13 +208,19 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    ...mapActions(["setTheme"]),
+    storeTheme(currTheme) {
+      this.setTheme(currTheme);
+    },
     toggleTheme() {
       this.themeBtn =
         this.themeBtn === "theme-black" ? "theme-light" : "theme-black";
       this.$parent.toggleTheme();
+      this.storeTheme(this.themeBtn);
     },
     getTheme() {
       this.themeBtn = localStorage.getItem("theme") || "theme-light";
+      this.storeTheme(this.themeBtn);
     },
     handleScroll() {
       var lastScrollTop = 0;

@@ -1,6 +1,6 @@
 <template >
   <div
-    class="content-wrapper bg-background-pri bg-no-repeat bg-top"
+    class="content-wrapper bg-background-pri bg-no-repeat bg-left-top"
     :class="theme"
     style="background-image:url('/uiux.svg')"
   >

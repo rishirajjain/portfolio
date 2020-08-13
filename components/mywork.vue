@@ -1,13 +1,14 @@
 <template>
   <nuxt-link :to="'/work/' + id">
     <div
-      class="flex-shrink-0 w-48 mt-4 relative overflow-hidden transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-background-crd rounded-lg max-w-xs shadow-lg"
+      :class="theme=='theme-light'?'cardEffLight':'cardEffDark'"
+      class="flex-shrink-0 w-48 mt-4 transition duration-500 ease-in-out transform hover:-translate-y-1 relative overflow-hidden bg-background-pri rounded-lg max-w-xs"
     >
       <svg
         class="absolute bottom-0 left-0"
         viewBox="0 0 375 283"
         fill="none"
-        style="transform: scale(1.5); opacity: 0.1;"
+        style="transform: scale(1.5); opacity: 0.02;"
       >
         <rect
           x="159.52"
@@ -28,12 +29,12 @@
         />
       </svg>
       <div class="relative flex items-center justify-center">
-        <img class="relative w-24 h-16" :src="img" alt />
+        <img class="relative w-24 h-16" :src="img" alt="Loading" />
       </div>
-      <div class="relative text-white px-4 pb-4">
+      <div class="relative px-4 pb-4">
         <span class="block opacity-75 -mb-1 text-xs">{{shortdes}}</span>
         <div class="flex flex-col justify-between">
-          <h2 class="text-white text-base mt-2 font-semibold">{{ title }}</h2>
+          <h2 class="text-base mt-2 font-semibold">{{ title }}</h2>
         </div>
       </div>
     </div>
@@ -41,7 +42,11 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   props: ["title", "shortdes", "id", "img"],
+  computed: {
+    ...mapState(["theme"]),
+  },
 };
 </script>

@@ -2,7 +2,8 @@ export const state = () => ({
   workData: {},
   workDataIndi: {},
   blogData: {},
-  blogDataIndi: {}
+  blogDataIndi: {},
+  theme: String
 });
 export const mutations = {
   SET_DATA_WORK: (state, data) => {
@@ -16,6 +17,9 @@ export const mutations = {
   },
   SET_DATA_B_INDI: (state, data) => {
     state.blogDataIndi = data;
+  },
+  SET_THEME: (state, currTheme) => {
+    state.theme = currTheme;
   }
 };
 
@@ -87,7 +91,6 @@ export const actions = {
         version: process.env.NODE_ENV == "production" ? "published" : "draft"
       })
       .then(res => {
-        console.log(res);
         commit("SET_DATA_B_INDI", {
           title: res.data.story.content.title,
           content: res.data.story.content.content,
@@ -97,5 +100,8 @@ export const actions = {
           coverImage: res.data.story.content.coverImage.filename
         });
       });
+  },
+  setTheme({ commit }, currTheme) {
+    return commit("SET_THEME", currTheme);
   }
 };
