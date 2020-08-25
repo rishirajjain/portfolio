@@ -5,15 +5,21 @@
         class="flex flex-col md:flex-row transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-105 mb-6 tracking-wide"
       >
         <div
-          class="flex justify-center h-64 md:h-auto w-full bg-no-repeat bg-center bg-cover bg-background-crd rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
+          v-if="img"
+          class="flex justify-center h-64 md:h-auto w-full bg-no-repeat bg-center bg-cover bg-white rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
           :style="{ 'background-image': 'url(' + img + ')' }"
-        >
-          <!-- <img
+        ></div>
+        <div
+          v-if="img==''"
+          class="flex justify-center h-64 md:h-auto w-full bg-no-repeat bg-center bg-cover bg-white rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
+          style="background-image: url('/logomain_d.svg')"
+        ></div>
+        <!-- <img
             :src="img"
             alt="cover picture"
             class="rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
-          />-->
-        </div>
+        />-->
+
         <div
           class="p-8 lg:w-3/4 bg-white rounded-t-none rounded-b-lg md:rounded-l-none md:rounded-r-lg"
         >

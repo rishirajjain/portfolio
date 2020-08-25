@@ -3,7 +3,7 @@ export const state = () => ({
   workDataIndi: {},
   blogData: {},
   blogDataIndi: {},
-  theme: String
+  theme: {}
 });
 export const mutations = {
   SET_DATA_WORK: (state, data) => {
@@ -102,6 +102,6 @@ export const actions = {
       });
   },
   setTheme({ commit }, currTheme) {
-    return commit("SET_THEME", currTheme);
+    commit("SET_THEME", currTheme);
   }
 };
