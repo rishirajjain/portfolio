@@ -24,12 +24,15 @@
             v-if="showMenu"
             @click="showMenu = false"
             tabindex="-1"
-            class="fixed inset-0 h-full w-full bg-gray opacity-25 cursor-default focus:outline-none"
+            class="fixed inset-0 h-full w-full bg-gray z-30 opacity-25 cursor-default focus:outline-none"
           ></button>
         </span>
       </div>
 
-      <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg" v-if="showMenu">
+      <div
+        class="origin-top-right absolute z-50 right-0 mt-2 w-56 rounded-md shadow-lg"
+        v-if="showMenu"
+      >
         <div class="rounded-md bg-background-crdLig shadow-xs">
           <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             <a

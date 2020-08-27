@@ -170,7 +170,7 @@
                 v-if="showMenu"
                 @click="showMenu = false"
                 tabindex="-1"
-                class="fixed inset-0 h-full w-full cursor-default"
+                class="fixed z-20 inset-0 h-full w-full cursor-default"
               ></button>
             </div>
           </div>
