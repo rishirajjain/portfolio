@@ -2,7 +2,7 @@
   <!-- Form field -->
 
   <div
-    class="flex w-full justify-center bg-background-ter items-center py-12 bg-no-repeat bg-center bg-contain"
+    class="flex w-full h-screen justify-center bg-background-ter items-center py-12 bg-no-repeat bg-center bg-contain"
     style="background-image:url('/bgdesign.svg')"
   >
     <div class="w-4/5 container flex flex-col md:flex-row">
@@ -36,7 +36,6 @@
               id="inline-full-name"
               type="text"
               name="name"
-              placeholder="Name"
               required
             />
           </div>
@@ -51,7 +50,6 @@
               id="inline-email"
               type="email"
               name="email"
-              placeholder="Email"
               required
             />
           </div>
@@ -65,7 +63,6 @@
               class="bg-gray-100 appearance-none border-2 border-gray-200 rounded form-textarea mt-1 block w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
               rows="3"
               name="message"
-              placeholder="Enter your message here."
             ></textarea>
           </div>
         </div>

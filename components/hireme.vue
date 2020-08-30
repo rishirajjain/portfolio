@@ -35,11 +35,15 @@
       >
         <div class="rounded-md bg-background-crdLig shadow-xs">
           <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-            <a
+            <!-- <a
               href="mailto:rishirajjain98@gmail.com?subject=Regarding an offer at {Insert Company name}&body=Hey Rishi, "
               class="block text-txt-pri px-4 py-2 text-sm leading-5 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
               role="menuitem"
-            >Contact Me</a>
+            >Contact Me</a>-->
+            <nuxt-link
+              class="block text-txt-pri px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900"
+              to="/contact"
+            >Contact Me</nuxt-link>
             <a
               href="https://docs.google.com/document/d/1JcDdPgwZYYAt6B574EY3fc__xwqjt-Pz7LD29I_w72I/edit?usp=sharing"
               target="_blank"
@@ -67,10 +71,10 @@ export default {
 
 <style scoped>
 .hireBtnlight {
-  box-shadow: 6px 6px 12px #e6e6e6, -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #e6dddf, -6px -6px 12px #ffffff;
 }
 .hireBtnlight:focus {
-  box-shadow: 6px 6px 12px #e6e6e6 inset, -6px -6px 12px #ffffff inset;
+  box-shadow: inset -6px 6px 12px #e6dddf, inset 6px -6px 12px #ffffff;
 }
 .hireBtndark {
   box-shadow: 6px 6px 12px #000407, -6px -6px 12px #00101d;

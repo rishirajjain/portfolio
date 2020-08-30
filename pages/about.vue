@@ -6,7 +6,7 @@
       <div class="flex flex-col w-3/4">
         <h1 class="text-txt-sec font-semibold text-xl md:text-3xl">
           Rishi Raj Jain is a Product Designer who also does some
-          FrontEnd development and runs two e-commerce businesses and is a graduate in Electronics and Communication.
+          FrontEnd development, runs two e-commerce businesses and is a graduate in Electronics and Communication.
           <br />
           <br />He commands the cupid, makes users fall in love with the product.
           He strongly believes in providing value and simplifying people's lives.
