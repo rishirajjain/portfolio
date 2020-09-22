@@ -51,7 +51,7 @@
             class="text-3xl md:text-4xl font-bold my-10"
           >Get your product supercharged with happy consumers.</h1>
           <div class="flex flex-wrap mt-6 mb-12 md:justify-between justify-around">
-            <div class="flex flex-col w-56 shadow-xs p-4">
+            <div class="flex flex-col w-56 border border-blue-200 p-4 shadow-lg">
               <img src="/entrepreneure.svg" alt="featImg" class="w-48 self-center" />
               <h2 class="font-bold self-center">Entrepreneur</h2>
 
@@ -62,7 +62,7 @@
                 <li>• The list is endless here :P</li>
               </ul>
             </div>
-            <div class="flex flex-col w-56 shadow-xs p-4">
+            <div class="flex flex-col w-56 border border-blue-200 p-4 shadow-lg">
               <img src="/product.svg" alt="featImg" class="w-48 self-center" />
               <h2 class="font-bold self-center">Product Manager</h2>
 
@@ -73,7 +73,7 @@
                 <li>• Drive product roadmaps, priorities</li>
               </ul>
             </div>
-            <div class="flex flex-col w-56 shadow-xs p-4">
+            <div class="flex flex-col w-56 border border-blue-200 p-4 shadow-lg">
               <img src="/visual.svg" alt="featImg" class="w-48 self-center" />
               <h2 class="font-bold self-center">Visual designer</h2>
 
@@ -83,7 +83,7 @@
                 <li>• Make products come to life</li>
               </ul>
             </div>
-            <div class="flex flex-col w-56 shadow-xs p-4">
+            <div class="flex flex-col w-56 border border-blue-200 p-4 shadow-lg">
               <img src="/dataAn.svg" alt="featImg" class="w-48 self-center" />
               <h2 class="font-bold self-center">Data Analyst</h2>
 
