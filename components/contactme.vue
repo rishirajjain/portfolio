@@ -1,19 +1,60 @@
 <template>
   <!-- Form field -->
 
-  <div
-    class="flex w-full h-screen justify-center bg-background-ter items-center py-12 bg-no-repeat bg-center bg-contain"
-    style="background-image:url('/bgdesign.svg')"
-  >
+  <div class="flex text-txt-pri w-full h-screen justify-center bg-background-ter items-center">
     <div class="w-4/5 container flex flex-col md:flex-row">
-      <div class="h-full w-full flex flex-col">
+      <div class="h-full w-full flex flex-col mr-6">
         <div class="mb-1">
-          <h3 class="text-5xl font-bold text-txt-pri">Contact</h3>
+          <!-- <img src="/contactme.svg" alt="contact me illustration" /> -->
+          <h3 class="text-5xl font-bold">Grab a coffee with me?☕</h3>
+          <p
+            class="text-xl mt-4"
+          >Have no hesitation in reaching out to me. I'm up for discussions, ideas anytime of the day :)</p>
         </div>
-        <img src="/contactme.svg" alt="contact me illustration" />
+
+        <div class="flex my-8">
+          <a
+            href="https://www.linkedin.com/in/rishiraj-jain"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/social/linkedin.svg" class="w-64 h-6" alt="linkedIn profile" />
+            <p class="text-xs">LinkedIn</p>
+          </a>
+          <a
+            href="https://twitter.com/rishirajjain98"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/social/twitter.svg" class="w-64 h-6" alt="twitter profile" />
+            <p class="text-xs">Twitter</p>
+          </a>
+
+          <a
+            href="https://github.com/rishirajjain"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/social/github.svg" class="w-64 h-6" alt="github profile" />
+            <p class="text-xs">Github</p>
+          </a>
+
+          <a
+            href="https://www.instagram.com/rish._/"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/social/instagram.svg" class="w-64 h-6" alt="instagram profile" />
+            <p class="text-xs">Instagram</p>
+          </a>
+        </div>
       </div>
       <form
-        class="w-full h-full p-8 bg-white rounded shadow"
+        class="w-full h-full p-8 self-center bg-white text-black rounded-sm shadow"
         name="contactForm"
         action="POST"
         netlify-honeypot="bot-field"

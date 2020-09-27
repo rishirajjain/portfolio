@@ -13,10 +13,11 @@ button:focus {
   --bg-background-pri: #000a12;
   --bg-background-sec: #3e4c52;
   --bg-background-ter: #263238;
-  --bg-card: #000a12;
+  --bg-card: #013158;
   --bg-card-light: #013158;
   --txt-pri: white;
   --txt-sec: rgb(240, 240, 240);
+  --bg-themecol: #ff4081;
 }
 
 .theme-light {
@@ -25,9 +26,10 @@ button:focus {
   --bg-background-ter: #f3f3f3;
 
   --bg-card-light: #ffffff;
-  --bg-card: #000a12;
+  --bg-card: #ffffff;
   --txt-pri: black;
   --txt-sec: rgb(27, 27, 27);
+  --bg-themecol: #4301c7;
 }
 .cardEffLight {
   box-shadow: 6px 6px 12px #e6dddf, -6px -6px 12px #ffffff;

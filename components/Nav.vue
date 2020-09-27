@@ -216,11 +216,18 @@ export default {
     toggleTheme() {
       this.themeBtn =
         this.themeBtn === "theme-black" ? "theme-light" : "theme-black";
-      this.$parent.toggleTheme();
+      localStorage.setItem("theme", this.themeBtn);
       this.storeTheme(this.themeBtn);
     },
     getTheme() {
-      this.themeBtn = localStorage.getItem("theme") || "theme-light";
+      this.themeBtn = localStorage.getItem("theme");
+      // console.log(localStorage.getItem("theme"));
+      if (this.themeBtn == undefined) {
+        localStorage.setItem("theme", "theme-black");
+        this.themeBtn = localStorage.getItem("theme");
+        this.storeTheme(this.themeBtn);
+        console.log("undef");
+      }
       this.storeTheme(this.themeBtn);
     },
     handleScroll() {

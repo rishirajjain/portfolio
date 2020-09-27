@@ -7,29 +7,15 @@
 </template>
 <script>
 import Nav from "@/components/Nav.vue";
-import Footer from "./partials/Footer";
+import Footer from "@/components/Footer.vue";
+import { mapState } from "vuex";
 export default {
-  mounted() {
-    this.getTheme();
-  },
-  data() {
-    return {
-      theme: String,
-    };
+  computed: {
+    ...mapState(["theme"]),
   },
   components: {
     Nav,
     Footer,
-  },
-  methods: {
-    getTheme() {
-      this.theme = localStorage.getItem("theme") || "theme-light";
-    },
-    toggleTheme() {
-      let curr = localStorage.getItem("theme") || "theme-light";
-      this.theme = curr === "theme-black" ? "theme-light" : "theme-black";
-      localStorage.setItem("theme", this.theme);
-    },
   },
 };
 </script>

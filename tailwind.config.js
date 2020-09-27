@@ -1,5 +1,8 @@
 module.exports = {
   important: true,
+  future: {
+    removeDeprecatedGapUtilities: true
+  },
   purge: ["./pages/**/*", "./layouts/**/*", "./components/**/*"],
   theme: {
     fontFamily: {

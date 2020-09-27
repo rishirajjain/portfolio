@@ -1,42 +1,51 @@
 <template>
-  <div class="my-12 mt-8">
+  <div class="py-8 text-txt-pri">
     <nuxt-link :to="'/blog/' + blogid">
-      <div
-        class="flex flex-col md:flex-row transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-105 mb-6 tracking-wide"
-      >
-        <div
-          v-if="img"
-          class="flex justify-center h-64 md:h-auto w-full bg-no-repeat bg-center bg-cover bg-white rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
-          :style="{ 'background-image': 'url(' + img + ')' }"
-        ></div>
-        <div
-          v-if="img==''"
-          class="flex justify-center h-64 md:h-auto w-full bg-no-repeat bg-center bg-cover bg-white rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
-          style="background-image: url('/logomain_d.svg')"
-        ></div>
-        <!-- <img
-            :src="img"
-            alt="cover picture"
-            class="rounded-b-none rounded-t-lg md:rounded-r-none md:rounded-l-lg"
-        />-->
+      <div class="container mx-auto mb-8">
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div
+            v-if="img"
+            class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-no-repeat bg-center"
+            :style="{ 'background-image': 'url(' + img + ')' }"
+          ></div>
+          <div
+            v-if="img == ''"
+            class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-no-repeat bg-center"
+            style="background-image: url('/logomain_d.svg')"
+          ></div>
+          <div
+            class="md:mb-0 flex flex-col justify-center items-center mx-auto"
+          >
+            <div
+              class="w-11/12 transform hover:-translate-y-6 delay-100 duration-300 bg-background-crd -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+            >
+              <div class="title-post font-bold text-xl">
+                {{ title }}
+              </div>
 
-        <div
-          class="p-8 lg:w-3/4 bg-white rounded-t-none rounded-b-lg md:rounded-l-none md:rounded-r-lg"
-        >
-          <h2 class="font-bold text-2xl text-gray-800 tracking-normal">{{ title }}</h2>
-          <p class="text-sm text-gray-700 mt-6 break-word font-medium">{{ description }}</p>
+              <div class="text-sm mt-2">
+                {{ description }}
+                <div
+                  class="flex mt-2 flex-wrap justify-between md:justify-start space-x-1 text-black"
+                >
+                  <div v-for="item in hashtags" :key="item.id" class="mt-2">
+                    <p
+                      v-for="item in item.body"
+                      :key="item.id"
+                      class="bg-blue-100 border-blue-300 border rounded-full px-2 py-1 text-xs"
+                    >
+                      {{ item.value }}
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-          <div class="flex mt-6 flex-wrap justify-between md:justify-start space-x-2">
-            <div v-for="item in hashtags" :key="item.id" class="mt-2">
-              <p
-                v-for="item in item.body"
-                :key="item.id"
-                class="bg-gray-400 rounded-full px-4 py-1 text-xs"
-              >{{ item.value }}</p>
+              <div class="flex justify-end mt-4">
+                <p class="text-xs text-txt-sec break-word">
+                  Published on {{ formatDate(publishDate) }}
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="flex justify-end mt-4">
-            <p class="text-xs text-gray-700 break-word">Published on {{formatDate(publishDate)}}</p>
           </div>
         </div>
       </div>
@@ -51,7 +60,7 @@ export default {
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };
       return new Date(date).toLocaleDateString("en", options);
-    },
-  },
+    }
+  }
 };
 </script>
