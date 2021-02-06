@@ -1,0 +1,56 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "E:\\\\rish code\\\\portfolio\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "url": "/about"
+  },
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "E:\\\\rish code\\\\portfolio\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "url": "/blog"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "E:\\\\rish code\\\\portfolio\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "url": "/contact"
+  },
+  {
+    "name": "home",
+    "path": "/home",
+    "component": "E:\\\\rish code\\\\portfolio\\\\pages\\\\home.vue",
+    "chunkName": "pages/home",
+    "url": "/home"
+  },
+  {
+    "name": "work",
+    "path": "/work",
+    "component": "E:\\\\rish code\\\\portfolio\\\\pages\\\\work\\\\index.vue",
+    "chunkName": "pages/work/index",
+    "url": "/work"
+  },
+  {
+    "name": "blog-blogid",
+    "path": "/blog/:blogid",
+    "component": "E:\\\\rish code\\\\portfolio\\\\pages\\\\blog\\\\_blogid\\\\index.vue",
+    "chunkName": "pages/blog/_blogid/index"
+  },
+  {
+    "name": "work-id",
+    "path": "/work/:id",
+    "component": "E:\\\\rish code\\\\portfolio\\\\pages\\\\work\\\\_id\\\\index.vue",
+    "chunkName": "pages/work/_id/index"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "E:\\\\rish code\\\\portfolio\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "url": "/"
+  }
+]

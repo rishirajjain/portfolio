@@ -1,0 +1,74 @@
+{
+  "BlogPosts": {
+    "description": "Auto imported from components/blogPosts.vue"
+  },
+  "LazyBlogPosts": {
+    "description": "Auto imported from components/blogPosts.vue"
+  },
+  "Contactme": {
+    "description": "Auto imported from components/contactme.vue"
+  },
+  "LazyContactme": {
+    "description": "Auto imported from components/contactme.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Gallery": {
+    "description": "Auto imported from components/gallery.vue"
+  },
+  "LazyGallery": {
+    "description": "Auto imported from components/gallery.vue"
+  },
+  "Hireme": {
+    "description": "Auto imported from components/hireme.vue"
+  },
+  "LazyHireme": {
+    "description": "Auto imported from components/hireme.vue"
+  },
+  "Illustration": {
+    "description": "Auto imported from components/illustration.vue"
+  },
+  "LazyIllustration": {
+    "description": "Auto imported from components/illustration.vue"
+  },
+  "Loading": {
+    "description": "Auto imported from components/loading.vue"
+  },
+  "LazyLoading": {
+    "description": "Auto imported from components/loading.vue"
+  },
+  "Myblogs": {
+    "description": "Auto imported from components/myblogs.vue"
+  },
+  "LazyMyblogs": {
+    "description": "Auto imported from components/myblogs.vue"
+  },
+  "Mywork": {
+    "description": "Auto imported from components/mywork.vue"
+  },
+  "LazyMywork": {
+    "description": "Auto imported from components/mywork.vue"
+  },
+  "Myworksection": {
+    "description": "Auto imported from components/myworksection.vue"
+  },
+  "LazyMyworksection": {
+    "description": "Auto imported from components/myworksection.vue"
+  },
+  "Nav": {
+    "description": "Auto imported from components/Nav.vue"
+  },
+  "LazyNav": {
+    "description": "Auto imported from components/Nav.vue"
+  },
+  "Workdetails": {
+    "description": "Auto imported from components/workdetails.vue"
+  },
+  "LazyWorkdetails": {
+    "description": "Auto imported from components/workdetails.vue"
+  }
+}
