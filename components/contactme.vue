@@ -15,11 +15,11 @@
         <div class="flex my-8">
           <a
             href="https://www.linkedin.com/in/rishiraj-jain"
-            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center mr-4 p-2"
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/social/linkedin.svg" class="w-64 h-6" alt="linkedIn profile" />
+            <img src="/social/linkedin.svg" class=" h-6" alt="linkedIn profile" />
             <p class="text-xs">LinkedIn</p>
           </a>
           <a

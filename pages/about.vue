@@ -9,6 +9,8 @@
         <h1 class="text-txt-sec text-xl md:text-3xl">
           Rishi Raj Jain is a Product Designer who also does some
           FrontEnd development, runs two e-commerce businesses and is a graduate in Electronics and Communication.
+          He is currently working with <a href="https://www.mindpeers.co" target="_blank" class=" underline hover:text-teal-500">mindpeers</a> as a Graphic Designer,
+          helping make mental health affordable and accessible to all.
           <br />
           <br />He commands the cupid, makes users fall in love with the product.
           He strongly believes in providing value and simplifying people's lives.
@@ -22,7 +24,7 @@
       </div>
 
       <div class="lg:ml-4 md:w-1/4 mb-8 md:mb-0">
-        <img src="/rish.svg" alt="Rishi Raj Jain" class="md:w-full w-64" />
+        <img src="/me.jpg" alt="Rishi Raj Jain" class="md:w-full w-64 rounded-full" />
       </div>
     </div>
   </div>
