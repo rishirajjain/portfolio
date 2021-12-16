@@ -33,15 +33,9 @@ export default {
     link: [
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Montserrat"
+        href: "https://fonts.googleapis.com/css2?family=Poppins"
       }
     ]
-    // link: [
-    //   {
-    //     rel: "stylesheet",
-    //     href: "https://fonts.googleapis.com/css2?family=Montserrat+Alternates"
-    //   }
-    // ]
   },
 
   generate: {
@@ -140,7 +134,7 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {
+/*   build: {
     postcss: {
       plugins: {
         "postcss-import": {},
@@ -148,5 +142,5 @@ export default {
         "postcss-nested": {}
       }
     }
-  }
+  } */
 };

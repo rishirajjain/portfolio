@@ -90,8 +90,8 @@
       <path id="Path_131" data-name="Path 131" d="M698.792,463.3c7.293-.41,41.623-2.994,63.429-15.432a24.712,24.712,0,0,1,11.518-3.392c6.933-.2,14.91,2.7,9.8,18.9-8.275,26.5-56.322,56.322-86.141,54.669-28.676-1.59-62.7-13.145-85.159-53.774a24.849,24.849,0,0,1-3.069-12.785c.261-8.2,3.243-18.476,18.637-7.02,20.8,15.469,60.26,18.4,68.175,18.836a26.212,26.212,0,0,0,2.808,0Z" transform="translate(85.599 51.506)" fill="#444053"/>
     </g>
     <g id="Group_24" data-name="Group 24">
-      <text id="Oops_couldn_t_find_anything_here" data-name="Oops! couldn&apos;t find anything here" transform="translate(338 1307)" fill="#707070" font-size="91" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Oops! couldn&apos;t find anything here</tspan></text>
-      <text id="_4_4" data-name="4   4" transform="translate(30 1024)" fill="#707070" font-size="1000" font-family="MontserratAlternates-Regular, Montserrat Alternates"><tspan x="0" y="0" xml:space="preserve">4   4</tspan></text>
+      <text id="Oops_couldn_t_find_anything_here" data-name="Oops! couldn&apos;t find anything here" transform="translate(338 1307)" fill="#707070" font-size="91" font-family="Poppins"><tspan x="0" y="0">Oops! couldn&apos;t find anything here</tspan></text>
+      <text id="_4_4" data-name="4   4" transform="translate(30 1024)" fill="#707070" font-size="1000" font-family="Poppins"><tspan x="0" y="0" xml:space="preserve">4   4</tspan></text>
     </g>
   </g>
 </svg>

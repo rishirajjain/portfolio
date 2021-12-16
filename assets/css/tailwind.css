@@ -9,21 +9,22 @@ body {
 button:focus {
   @apply outline-none;
 }
+
 .theme-black {
   --bg-background-pri: #000a12;
-  --bg-background-sec: #3e4c52;
-  --bg-background-ter: #263238;
+  --bg-background-sec: #001220;
+  --bg-background-ter: #001b2f;
   --bg-card: #013158;
   --bg-card-light: #013158;
   --txt-pri: white;
-  --txt-sec: rgb(240, 240, 240);
+  --txt-sec: rgb(207, 207, 207);
   --bg-themecol: #ff4081;
 }
 
 .theme-light {
-  --bg-background-pri: #fff6f8;
-  --bg-background-sec: #d6d6d6;
-  --bg-background-ter: #f3f3f3;
+  --bg-background-pri: #faf2ff;
+  --bg-background-sec: #fffcff;
+  --bg-background-ter: #ffffff;
 
   --bg-card-light: #ffffff;
   --bg-card: #ffffff;
@@ -53,16 +54,16 @@ button:focus {
   background-color: #4301c7;
 }
 /* button styles for content on work pages */
-.btn {
+/* .btn {
   @apply text-white px-8 bg-gray-800 py-2 shadow rounded-full;
-}
-.btn:focus {
+} */
+/* .btn:focus {
   @apply shadow-outline;
   @apply outline-none;
-}
-.btn:hover {
+} */
+/* .btn:hover {
   @apply shadow-outline;
-}
+} */
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.1s;
@@ -72,14 +73,95 @@ button:focus {
   opacity: 0;
 }
 
-.tooltip .tooltip-text {
-  top: 2rem;
-  @apply invisible px-4 absolute z-50 inline-block mr-4 right-0 text-xs rounded-lg bg-gray-700 text-white;
+.scroll-down {
+  border: 2px solid #ff4081;
+  border-radius: 20px;
+  bottom: 10px;
+  height: 50px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 30px;
+}
+.scroll-down::before {
+  animation: scrollDownAnimation 2s infinite;
+  background-color: #ff4081;
+  border-radius: 100%;
+  content: '';
+  height: 6px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 6px;
+}
+@-moz-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.tooltip:hover .tooltip-text {
-  @apply visible;
-}
 
 .content-wrapper {
   transition: background-color 0.25s;
