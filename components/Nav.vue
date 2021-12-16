@@ -14,19 +14,19 @@
 
         <div class="flex justify-end">
           <div class="flex space-x-12 justify-center items-center px-10">
-            <nuxt-link to="/home">Home</nuxt-link>
+            <nuxt-link to="/home" >Home</nuxt-link>
 
-            <nuxt-link to="/work">Work</nuxt-link>
+            <!-- <nuxt-link to="/work">Work</nuxt-link> -->
 
-            <nuxt-link to="/blog">Blog</nuxt-link>
+            <nuxt-link to="/blog" >Tracoph</nuxt-link>
 
-            <nuxt-link to="/about">About</nuxt-link>
+            <nuxt-link to="/about" >About</nuxt-link>
 
             <hireme :theme="themeBtn" />
           </div>
-          <div class="flex tooltip relative">
-            <p class="tooltip-text">Change theme</p>
-            <button @click.prevent="toggleTheme" class>
+          <div class="flex" >
+            <!-- <p class="tooltip-text">Change theme</p> -->
+            <button @click.prevent="toggleTheme" >
               <img
                 v-if="themeBtn === 'theme-black'"
                 src="/light.svg"
@@ -52,7 +52,7 @@
           <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />
         </nuxt-link>
         <div class="self-start tooltip relative">
-          <p class="tooltip-text">Change theme</p>
+          <!-- <p class="tooltip-text">Change theme</p> -->
           <button @click.prevent="toggleTheme" class>
             <img v-if="themeBtn === 'theme-black'" src="/light.svg" alt="change theme" class="w-6" />
             <img v-else src="/black.svg" alt="change theme" class="w-6" />
@@ -90,7 +90,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full mx-4">
+        <div class="w-full mx-8">
           <div class="flex justify-between items-center bg-text-ux text-base text-txt-pri">
             <div>
               <nuxt-link
@@ -107,7 +107,7 @@
                 <span class="text-xs">Home</span>
               </nuxt-link>
             </div>
-            <div>
+            <!-- <div>
               <nuxt-link
                 to="/work"
                 class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
@@ -121,7 +121,7 @@
                 <img v-else src="/work_d.svg" alt="work" class="w-10 h-10 mb-2" />
                 <span class="text-xs">Work</span>
               </nuxt-link>
-            </div>
+            </div> -->
 
             <div>
               <nuxt-link
@@ -135,7 +135,7 @@
                   class="w-10 h-10 mb-2"
                 />
                 <img v-else src="/blog_d.svg" alt="blog" class="w-10 h-10 mb-2" />
-                <span class="text-xs">Blog</span>
+                <span class="text-xs">Tracoph</span>
               </nuxt-link>
             </div>
             <div>
@@ -249,8 +249,5 @@ export default {
 }
 .logoStyle {
   border-bottom: none;
-}
-.logoText {
-  font-family: "Montserrat Alternates";
 }
 </style>

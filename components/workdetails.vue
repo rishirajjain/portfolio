@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4 bg-white rounded-md shadow p-10 md:p-16">
+  <div class="mt-4 bg-white rounded-md shadow p-7 md:p-16">
     <div>
       <h2 class="text-gray-800 text-3xl font-semibold mb-8">{{ title }}</h2>
 

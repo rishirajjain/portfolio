@@ -1,13 +1,10 @@
 module.exports = {
   important: true,
-  future: {
-    removeDeprecatedGapUtilities: true
-  },
   purge: ["./pages/**/*", "./layouts/**/*", "./components/**/*"],
   theme: {
     fontFamily: {
-      display: ["Montserrat", "sans-serif"],
-      body: ["Montserrat", "sans-serif"]
+      display: ["Poppins", "sans-serif"],
+      body: ["Poppins", "sans-serif"]
     },
     extend: {
       colors: {

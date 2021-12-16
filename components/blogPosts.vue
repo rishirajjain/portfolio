@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4 bg-white rounded-md shadow p-8">
+  <div class="mt-4 bg-white rounded-md shadow p-7">
     <div>
       <div class="flex flex-col flex-wrap justify-between">
         <h2 class="text-gray-800 text-3xl font-semibold">{{ head }}</h2>

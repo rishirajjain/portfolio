@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-4 flex flex-col justify-center items-center">
-    <div class="container flex flex-col w-11/12 md:w-4/5 space-y-12 mb-8 z-30">
+    <div class="container flex flex-col w-4/5 space-y-12 mb-8 z-30">
       <div class="self-start underline text-xl">
         <nuxt-link to="/blog" class="text-txt-pri cursor-pointer">Back</nuxt-link>
       </div>

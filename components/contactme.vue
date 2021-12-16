@@ -1,14 +1,14 @@
 <template>
   <!-- Form field -->
 
-  <div class="flex text-txt-pri w-full h-screen justify-center bg-background-ter items-center">
-    <div class="w-4/5 container flex flex-col md:flex-row">
+  <div class="flex text-txt-pri w-full h-full justify-center bg-background-sec items-center">
+    <div class="my-24 md:my-0 w-4/5 container flex flex-col md:flex-row">
       <div class="h-full w-full flex flex-col mr-6">
-        <div class="mb-1">
+        <div class="mb-1 md:w-11/12">
           <!-- <img src="/contactme.svg" alt="contact me illustration" /> -->
-          <h3 class="text-5xl font-bold">Grab a coffee with me?☕</h3>
+          <h3 class=" text-3xl md:text-5xl font-bold">Grab a coffee with me?☕</h3>
           <p
-            class="text-xl mt-4"
+            class=" text-sm md:text-xl mt-4 md:w-10/12"
           >Have no hesitation in reaching out to me. I'm up for discussions, ideas anytime of the day :)</p>
         </div>
 
@@ -54,7 +54,7 @@
         </div>
       </div>
       <form
-        class="w-full h-full p-8 self-center bg-white text-black rounded-sm shadow"
+        class="w-full h-full p-12 self-center bg-background-ter text-txt-sec rounded-md shadow"
         name="contactForm"
         action="POST"
         netlify-honeypot="bot-field"
