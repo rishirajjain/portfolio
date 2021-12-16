@@ -9,7 +9,7 @@
         <p class="text-txt-sec text-base md:text-lg ">
           Rishi Raj Jain is a Product Designer who also does some
           FrontEnd development, runs two e-commerce businesses and is a graduate in Electronics and Communication.
-          He is currently working with <a href="https://www.mindpeers.co" target="_blank" class="underline hover:text-indigo-400">MindPeers</a> as Lead UX/UI Designer,
+          He is currently working with <a href="https://www.mindpeers.co" target="_blank" class="underline text-indigo-400">MindPeers</a> as Lead UX/UI Designer,
           helping make mental health affordable and accessible to all.
           <br />
           <br />He commands the cupid, makes users fall in love with the product.
@@ -23,15 +23,29 @@
         </p>
       </div>
 
-      <div class="lg:ml-4 md:w-1/4 mb-8 md:mb-0">
-        <img src="/me.jpg" alt="Rishi Raj Jain" class="md:w-full w-64 rounded-full" />
+      <div class="lg:ml-4 md:w-1/4 mb-8 md:mb-0 text-white">
+      <div v-for="item in gallery.imageLink" :key="item.id">
+        <img v-if="item.alt==='profilepic'" :src="item.filename" alt="Rishi Raj Jain" class="md:w-full w-64 rounded-full" /> 
+      </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapActions, mapState } from "vuex";
 export default {
+  mounted() {
+    this.getImages();
+  },
+  computed: {
+    ...mapState(["gallery"]),
+  },
+  methods: {
+    ...mapActions(["setGallery"]),
+    getImages() {
+      this.setGallery();
+    },
   head() {
     return {
       title: "About - Rishi Raj Jain",
@@ -45,5 +59,6 @@ export default {
       ],
     };
   },
-};
+},
+}
 </script>

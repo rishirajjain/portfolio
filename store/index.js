@@ -108,17 +108,17 @@ export const actions = {
   setTheme({ commit }, currTheme) {
     commit("SET_THEME", currTheme);
   },
- /*  setGallery({ commit }) {
+  setGallery({ commit }) {
     return this.$storyapi
       .get("cdn/stories/workgallery/", {
         version: process.env.NODE_ENV == "production" ? "published" : "draft"
       })
       .then(res => {
-        console.log(res);
-        console.log(res.data.story.content.images);
+        // console.log(res);
+       console.log(res.data.story.content.images);
         commit("SET_GALLERY", {
           imageLink: res.data.story.content.images
         });
       });
-  } */
+  }
 };

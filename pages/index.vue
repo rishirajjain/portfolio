@@ -75,13 +75,13 @@ export default {
     illustration,
   },
   computed: {
-    ...mapState(["workData", "gallery"]),
+    ...mapState(["workData"]),
   },
   methods: {
-    ...mapActions(["loadWorkData", "setGallery"]),
+    ...mapActions(["loadWorkData"]),
     getWorkData() {
       this.loadWorkData();
-      this.setGallery();
+      // this.setGallery();
     },
   
     /* modifyData() {
