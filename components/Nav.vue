@@ -12,19 +12,21 @@
           <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />
         </nuxt-link>
 
-        <div class="flex justify-end">
+        <div class="flex justify-center">
           <div class="flex space-x-12 justify-center items-center px-10">
             <nuxt-link to="/home" >Home</nuxt-link>
 
             <!-- <nuxt-link to="/work">Work</nuxt-link> -->
 
-            <nuxt-link to="/blog" >Tracoph</nuxt-link>
+            <nuxt-link to="/blog" >Blog</nuxt-link>
 
             <nuxt-link to="/about" >About</nuxt-link>
 
-            <hireme :theme="themeBtn" />
+            <!-- <hireme :theme="themeBtn" /> -->
           </div>
-          <div class="flex" >
+          
+        </div>
+        <div class="flex" >
             <!-- <p class="tooltip-text">Change theme</p> -->
             <button @click.prevent="toggleTheme" >
               <img
@@ -36,7 +38,6 @@
               <img v-else src="/black.svg" alt="change theme" class="w-6" />
             </button>
           </div>
-        </div>
       </div>
     </div>
     <!-- Mobile Nav -->
@@ -135,7 +136,7 @@
                   class="w-10 h-10 mb-2"
                 />
                 <img v-else src="/blog_d.svg" alt="blog" class="w-10 h-10 mb-2" />
-                <span class="text-xs">Tracoph</span>
+                <span class="text-xs">Blog</span>
               </nuxt-link>
             </div>
             <div>
@@ -246,6 +247,7 @@ export default {
 <style scoped>
 .nuxt-link-active {
   border-bottom: 2px solid #ff4081;
+  color: #ff4081;
 }
 .logoStyle {
   border-bottom: none;

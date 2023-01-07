@@ -9,7 +9,9 @@ body {
 button:focus {
   @apply outline-none;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .theme-black {
   --bg-background-pri: #000a12;
   --bg-background-sec: #001220;
@@ -47,12 +49,71 @@ button:focus {
   width: 25%;
   align-self: flex-start;
 }
-.btncol {
+
+#btncol {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#btncol a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#spin {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  left: 70px;
+  top: 20px;
+  transform: rotate(0deg);
+  background: none;
+  position: absolute;
+  transition: all .5s ease-Out;
+}
+
+#btncol:hover #spin {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  left: -70px;
+  top: -70px;
+  background: #5400ff;
+  transform: rotate(80deg);
+}
+
+#btncol:hover a {
+  color: #ffffff;
+}
+.btncol{
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #5400ff;
+  border-radius: 25px;
+  margin: 20px 20px 20px 20px;
+  /* color: #5400ff; */
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.btncol a{
+  /* color: #000407; */
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+ .btncolor {
   background-color: #5400ff;
 }
-.btncol:hover {
+.btncolor:hover {
   background-color: #4301c7;
-}
+} 
 /* button styles for content on work pages */
 /* .btn {
   @apply text-white px-8 bg-gray-800 py-2 shadow rounded-full;

@@ -7,17 +7,15 @@
         <p class="text-4xl name mb-4 font-bold">Who is Rishi?</p>
 
         <p class="text-txt-sec text-base md:text-lg ">
-          Rishi Raj Jain is a Product Designer who also does some
-          FrontEnd development, runs two e-commerce businesses and is a graduate in Electronics and Communication.
-          He is currently working with <a href="https://www.mindpeers.co" target="_blank" class="underline text-indigo-400">MindPeers</a> as Lead UX/UI Designer,
-          helping make mental health affordable and accessible to all.
+          Rishi Raj Jain is a Product Designer with 2+ years of experience, He is proficient in all aspects of the design process and has made close 20+ features from 0-1. He thrives in a fast paced environment and is always looking for opportunities to learn new things. he helps run an e-commerce business <a href="https://bharatexotics.com/" target="_blank" class="underline text-indigo-400">Bharatexotics</a>  and is a graduate in Electronics and Communication.
+          He is currently working with <a href="https://www.mindpeers.co" target="_blank" class="underline text-indigo-400">MindPeers</a> as Lead UX/UI Designer.
           <br />
           <br />He commands the cupid, makes users fall in love with the product.
           He strongly believes in providing value and simplifying people's lives.
         </p>
         <p class="text-4xl name mt-12 mb-4 font-bold">More about Rishi</p>
         <p class="text-txt-sec text-base md:text-lg self-start mb-12">
-          Rishi is passionate about making sure that systems, interface, semantics, and graphics are human-friendly, aesthetically pleasing, emotive, clear, and usable. He has recently worked in a product company as a Frontend Developer. From workflow diagrams to detailed user interface mockups, Rishi loves crafting on-screen experiences.
+          Rishi is passionate about making sure that systems, interface, semantics, and graphics are human-friendly, aesthetically pleasing, emotive, clear, and usable.From workflow diagrams to detailed user interface mockups and animations, Rishi loves crafting on-screen experiences.
           <br />
           <br />Photography, traveling, and reading are some of the things you'd often find him doing. Peep the resume or check out my LinkedIn page to take a closer look at my work history and whatnot.
         </p>
