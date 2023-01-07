@@ -3,8 +3,8 @@ module.exports = {
   purge: ["./pages/**/*", "./layouts/**/*", "./components/**/*"],
   theme: {
     fontFamily: {
-      display: ["Poppins", "sans-serif"],
-      body: ["Poppins", "sans-serif"]
+      display: ["Work Sans", "sans-serif"],
+      body: ["Work Sans", "sans-serif"]
     },
     extend: {
       colors: {

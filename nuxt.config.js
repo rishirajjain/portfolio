@@ -33,7 +33,7 @@ export default {
     link: [
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Poppins"
+        href: "https://fonts.googleapis.com/css2?family=Work+Sans"
       }
     ]
   },

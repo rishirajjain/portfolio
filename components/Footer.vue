@@ -12,7 +12,6 @@
 
 <script>
 import contactme from "@/components/contactme";
-import Contactme from './contactme.vue';
 export default {
   components: {
     contactme,
