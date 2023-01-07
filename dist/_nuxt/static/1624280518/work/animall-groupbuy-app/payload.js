@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work/animall-groupbuy-app", {data:[{}],fetch:[],mutations:[]});
