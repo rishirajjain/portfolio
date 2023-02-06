@@ -7,7 +7,7 @@
         <p class="text-4xl name mb-4 font-bold">Who is Rishi?</p>
 
         <p class="text-txt-sec text-base md:text-lg ">
-          Rishi Raj Jain is a Product Designer with 2+ years of experience, He is proficient in all aspects of the design process and has made close 20+ features from 0-1. He thrives in a fast paced environment and is always looking for opportunities to learn new things. he helps run an e-commerce business <a href="https://bharatexotics.com/" target="_blank" class="underline text-indigo-400">Bharatexotics</a>  and is a graduate in Electronics and Communication.
+          Rishi Raj Jain is a Product Designer with 3+ years of experience, He is proficient in all aspects of the design process and has made close 20+ features from 0-1. He thrives in a fast paced environment and is always looking for opportunities to learn new things. he helps run an e-commerce business <a href="https://bharatexotics.com/" target="_blank" class="underline text-indigo-400">Bharatexotics</a>  and is a graduate in Electronics and Communication.
           He is currently working with <a href="https://www.mindpeers.co" target="_blank" class="underline text-indigo-400">MindPeers</a> as Lead UX/UI Designer.
           <br />
           <br />He commands the cupid, makes users fall in love with the product.
