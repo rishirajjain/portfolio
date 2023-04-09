@@ -8,7 +8,7 @@
           <!-- <img src="/contactme.svg" alt="contact me illustration" /> -->
           <h3 class=" text-3xl md:text-5xl font-bold">Grab a coffee with me?☕</h3>
           <p
-            class=" text-sm md:text-xl mt-4 md:w-10/12"
+            class=" text-sm md:text-xl mt-4 md:w-10/12 text-gray-300"
           >If you're looking for someone to help bring your ideas to life, drop me a message! I'm always up for a creative challenge</p>
         </div>
 
@@ -73,7 +73,7 @@
           </div>
           <div class="md:w-4/5">
             <input
-              class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-700"
+              class=" bg-gray-800 appearance-none border-2 border-gray-500 rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:border-blue-700"
               id="inline-full-name"
               type="text"
               name="name"
@@ -87,7 +87,7 @@
           </div>
           <div class="md:w-4/5">
             <input
-              class="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-700"
+              class="bg-gray-800 appearance-none border-2 border-gray-500 rounded w-full py-2 px-4 text-white leading-tight focus:outline-none  focus:border-blue-700"
               id="inline-email"
               type="email"
               name="email"
@@ -101,7 +101,7 @@
           </div>
           <div class="md:w-4/5">
             <textarea
-              class="bg-gray-100 appearance-none border-2 border-gray-200 rounded form-textarea mt-1 block w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-700"
+              class="bg-gray-800 appearance-none border-2 border-gray-500 rounded form-textarea mt-1 block w-full py-2 px-4 text-white leading-tight focus:outline-none  focus:border-blue-700"
               rows="3"
               name="message"
             ></textarea>

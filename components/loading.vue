@@ -1,36 +1,14 @@
-<template lang="html">
-  <div class="loading-page z-50 flex justify-center" v-if="loading">
-    <svg class=" w-20 md:w-32" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
-            <stop stop-color="#fff" stop-opacity="0" offset="0%"/>
-            <stop stop-color="#fff" stop-opacity=".631" offset="63.146%"/>
-            <stop stop-color="#fff" offset="100%"/>
-        </linearGradient>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <g transform="translate(1 1)">
-            <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="2">
-                <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="0 18 18"
-                    to="360 18 18"
-                    dur="0.9s"
-                    repeatCount="indefinite" />
-            </path>
-            <circle fill="#fff" cx="36" cy="18" r="1">
-                <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="0 18 18"
-                    to="360 18 18"
-                    dur="0.9s"
-                    repeatCount="indefinite" />
-            </circle>
-        </g>
-    </g>
-</svg>
+<template>
+  <div class="loading-page z-50 flex justify-center items-center" v-if="loading">
+    <div class="loader-container">
+      <div class="loader">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+      </div>
+      <div class="text-white bold">Good things take time 😊</div>
+    </div>
   </div>
 </template>
 
@@ -65,10 +43,63 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(138, 138, 138, 0.5);
-  text-align: center;
-  padding-top: 200px;
-  font-size: 30px;
-  font-family: sans-serif;
+  background: rgba(48, 48, 48, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.loader .circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: bounce 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+.circle-1 {
+  background: linear-gradient(135deg, #ff4a4a, #ffad4a);
+  animation-delay: -0.3s;
+}
+
+.circle-2 {
+  background: linear-gradient(135deg, #ffad4a, #4aff82);
+  animation-delay: -0.15s;
+}
+
+.circle-3 {
+  background: linear-gradient(135deg, #4aff82, #4a6aff);
+}
+
+.circle-4 {
+  background: linear-gradient(135deg, #4a6aff, #ff4a4a);
+  animation-delay: 0.15s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 </style>
