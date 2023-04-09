@@ -2,19 +2,25 @@
   <nav class="text-base text-txt-pri py-8 w-full">
     <div class="hidden md:flex justify-center">
       <div class="container flex justify-between w-4/5">
-        <nuxt-link to="/home" class="logoStyle">
-          <img
+        <div class="flex space-x-4 justify-center items-center ">
+          <nuxt-link to="/" class="logoStyle">
+            <Span class="name text-xl  md:text-4xl">Rishi Raj Jain</Span>
+          <!-- <img
             v-if="themeBtn === 'theme-black'"
             src="/logoMain_l.svg"
             alt="Tracoph Logo"
             class="w-8"
           />
-          <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />
+          <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />  -->
+          
         </nuxt-link>
+        
+        </div>
+        
 
         <div class="flex justify-center">
           <div class="flex space-x-12 justify-center items-center px-10">
-            <nuxt-link to="/home" >Home</nuxt-link>
+            <nuxt-link to="/" exact>Home</nuxt-link>
 
             <!-- <nuxt-link to="/work">Work</nuxt-link> -->
 
@@ -26,8 +32,7 @@
           </div>
           
         </div>
-        <div class="flex" >
-            <!-- <p class="tooltip-text">Change theme</p> -->
+        <!-- <div class="flex" >
             <button @click.prevent="toggleTheme" >
               <img
                 v-if="themeBtn === 'theme-black'"
@@ -37,28 +42,31 @@
               />
               <img v-else src="/black.svg" alt="change theme" class="w-6" />
             </button>
-          </div>
+          </div> -->
       </div>
     </div>
     <!-- Mobile Nav -->
     <div class="flex justify-center md:hidden">
       <div class="container flex justify-between w-4/5">
-        <nuxt-link to="/home" class="logoStyle">
-          <img
+        <div class="flex space-x-4 justify-center items-center ">
+          <nuxt-link to="/" class="logoStyle">
+         <!--  <img
             v-if="themeBtn === 'theme-black'"
             src="/logoMain_l.svg"
             alt="Tracoph Logo"
             class="w-8"
           />
-          <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" />
+          <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" /> --> 
+          <Span class="name text-xl  md:text-4xl">Rishi Raj Jain</Span>
         </nuxt-link>
-        <div class="self-start tooltip relative">
-          <!-- <p class="tooltip-text">Change theme</p> -->
+      
+        </div>
+        <!-- <div class="self-start tooltip relative">
           <button @click.prevent="toggleTheme" class>
             <img v-if="themeBtn === 'theme-black'" src="/light.svg" alt="change theme" class="w-6" />
             <img v-else src="/black.svg" alt="change theme" class="w-6" />
           </button>
-        </div>
+        </div> -->
       </div>
       <div
         v-if="isOpen"
@@ -95,7 +103,7 @@
           <div class="flex justify-between items-center bg-text-ux text-base text-txt-pri">
             <div>
               <nuxt-link
-                to="/home"
+                to="/"
                 class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
               >
                 <img
@@ -245,6 +253,12 @@ export default {
 };
 </script>
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+.name{
+  font-family: 'Mrs Saint Delafield', cursive;
+}
+
 .nuxt-link-active {
   border-bottom: 2px solid #ff4081;
   color: #ff4081;

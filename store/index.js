@@ -85,7 +85,8 @@ export const actions = {
           type: res.data.story.content.type,
           duration: res.data.story.content.duration,
           myrole: res.data.story.content.myrole,
-          whatidid: res.data.story.content.whatidid
+          whatidid: res.data.story.content.whatidid,
+          img: res.data.story.content.gallery,
         });
       });
   },
@@ -108,7 +109,7 @@ export const actions = {
   setTheme({ commit }, currTheme) {
     commit("SET_THEME", currTheme);
   },
-  setGallery({ commit }) {
+  /* setGallery({ commit }) {
     return this.$storyapi
       .get("cdn/stories/workgallery/", {
         version: process.env.NODE_ENV == "production" ? "published" : "draft"
@@ -120,5 +121,5 @@ export const actions = {
           imageLink: res.data.story.content.images
         });
       });
-  }
+  } */
 };
