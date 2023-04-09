@@ -105,7 +105,7 @@
               <nuxt-link
                 to="/"
                 class="flex flex-col transition duration-200 p-2 justify-center items-center ease-in-out transform hover:-translate-y-1"
-              >
+                exact>
                 <img
                   v-if="themeBtn === 'theme-black'"
                   src="/home_l.svg"
@@ -253,8 +253,6 @@ export default {
 };
 </script>
 <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
-
 .name{
   font-family: 'Mrs Saint Delafield', cursive;
 }

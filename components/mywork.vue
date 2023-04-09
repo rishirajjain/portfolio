@@ -4,9 +4,9 @@
       <div ref="imageContainer" class="w-full overflow-hidden relative">
         <img ref="scrollImage" :src="img" alt="" class="scroll-image w-full object-cover h-full">
       </div>
-      <div class="mt-4">
-        <p class="font-bold text-2xl md:text-3xl mt-12 md:mt-0">{{ title }}</p>
-        <div class="mb-8 text-sm mt-4">{{ description }}</div>
+      <div class="mt-6">
+        <p class="font-bold text-2xl md:text-3xl mt-4 md:mt-0">{{ title }}</p>
+        <div class="mb-12 text-sm mt-4">{{ description }}</div>
       </div>
     </div>
   </nuxt-link>

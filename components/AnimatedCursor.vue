@@ -1,15 +1,26 @@
 <template>
-  <div ref="cursor" class="cursor">
+  <div v-show="!isMobile" ref="cursor" class="cursor">
     <div ref="follower" class="follower"></div>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isMobile: false,
+    };
+  },
   mounted() {
-    this.initCursor();
+    this.detectMobile();
+    if (!this.isMobile) {
+      this.initCursor();
+    }
   },
   methods: {
+    detectMobile() {
+      this.isMobile = window.matchMedia('(max-width: 767px)').matches;
+    },
     initCursor() {
       const cursor = this.$refs.cursor;
       const follower = this.$refs.follower;
