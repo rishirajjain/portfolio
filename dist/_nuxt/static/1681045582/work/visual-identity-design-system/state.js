@@ -1,0 +1,1 @@
+window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1681045582",layout:"default",error:null,state:{workData:{},workDataIndi:{},blogData:{},blogDataIndi:{},gallery:{},theme:{}},serverRendered:true,routePath:"\u002Fwork\u002Fvisual-identity-design-system",config:{}};
