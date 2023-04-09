@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/work/visual-identity-design-system", {data:[{}],fetch:[],mutations:[]});

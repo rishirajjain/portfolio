@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/work/mindpeers", {data:[{}],fetch:[],mutations:[]});
