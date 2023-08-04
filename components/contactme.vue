@@ -43,7 +43,7 @@
           </a>
 
           <a
-            href="https://www.instagram.com/rish._/"
+            href="https://www.instagram.com/rishirajjain.ux/"
             class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
             target="_blank"
             rel="noreferrer"
