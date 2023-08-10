@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog/user-interface-design-guidelines", {data:[{}],fetch:[],mutations:[]});
