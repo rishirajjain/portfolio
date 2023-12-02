@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog/how-to-become-a-ux-ui-designer-in-2023", {data:[{}],fetch:[],mutations:[]});
