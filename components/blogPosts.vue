@@ -15,7 +15,10 @@
       </div>
       <hr class="mt-16 mb-4" />
       <div class="flex space-x-4 items-center">
-        <img src="/rishi.jpg" alt="author" class="rounded-full w-12 h-12 self-start" />
+        <div v-for="item in gallery.imageLink" :key="item.id">
+          <img v-if="item.alt==='profilepic'" :src="item.filename" alt="Rishi Raj Jain" class="rounded-full w-12 h-12 self-start" />
+
+        </div>
         <div class="flex flex-col">
           <p class>Words by,</p>
 
@@ -28,7 +31,7 @@
               :url="'https://rishirajjain.com' + fullPath"
               :title="titleForShare || 'Not Set'"
             >
-              <img src="/social/twitter.svg" alt class="w-6 h-6" />
+              <img src="/social/twitter-black.svg" alt class="w-6 h-6" />
               <p class="self-center ml-1 text-xs">Tweet</p>
             </ShareNetwork>
             <ShareNetwork
@@ -71,6 +74,7 @@
 </template>
 
 <script>
+import { mapActions, mapState } from "vuex";
 export default {
   data() {
     return {
@@ -96,8 +100,10 @@ export default {
       var title = this.head;
       return title;
     },
+    ...mapState(["gallery"]),
   },
   mounted() {
+    this.getImages();
     window.fbAsyncInit = function () {
       FB.init({ cookie: true, xfbml: true, version: "v4.0" });
     };
@@ -116,8 +122,13 @@ export default {
     setTimeout(() => {
       this.initCreationFacebookComments();
     }, 2000);
+    
   },
   methods: {
+    ...mapActions(["setGallery"]),
+    getImages() {
+      this.setGallery();
+    },
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };
       return new Date(date).toLocaleDateString("en", options);

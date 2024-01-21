@@ -15,42 +15,42 @@
         <div class="flex my-8">
           <a
             href="https://www.linkedin.com/in/rishiraj-jain"
-            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center mr-4 p-2"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex gap-2 flex-col justify-center items-center mr-4 p-2"
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/social/linkedin.svg" class=" h-6" alt="linkedIn profile" />
+            <img src="/social/linkedin.svg" class=" h-12 rounded" alt="linkedIn profile" />
             <p class="text-xs">LinkedIn</p>
           </a>
           <a
-            href="https://twitter.com/rishirajjain98"
-            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
+            href="https://behance.com/rishirajjain98"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex gap-2  flex-col justify-center items-center w-24 p-2"
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/social/twitter.svg" class="w-64 h-6" alt="twitter profile" />
-            <p class="text-xs">Twitter</p>
+            <img src="/social/behance.svg" class="w-64 h-12" alt="twitter profile" />
+            <p class="text-xs">Behance</p>
           </a>
-
+          <a
+            href="https://www.instagram.com/rishirajjain.uix/"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex gap-2  flex-col justify-center items-center w-24 p-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/social/instagram.svg" class="w-64 h-12" alt="instagram profile" />
+            <p class="text-xs">Instagram</p>
+          </a>
           <a
             href="https://github.com/rishirajjain"
-            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex gap-2  flex-col justify-center items-center w-24 p-2"
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/social/github.svg" class="w-64 h-6" alt="github profile" />
+            <img src="/social/github.svg" class="w-64 h-12" alt="github profile" />
             <p class="text-xs">Github</p>
           </a>
 
-          <a
-            href="https://www.instagram.com/rish._/"
-            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex flex-col justify-center items-center w-24 p-2"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src="/social/instagram.svg" class="w-64 h-6" alt="instagram profile" />
-            <p class="text-xs">Instagram</p>
-          </a>
+         
         </div>
       </div>
       <form

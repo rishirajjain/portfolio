@@ -28,7 +28,7 @@
 
             <nuxt-link to="/about" >About</nuxt-link>
 
-            <!-- <hireme :theme="themeBtn" /> -->
+            <hireme :theme="themeBtn" />
           </div>
           
         </div>
@@ -57,7 +57,7 @@
             class="w-8"
           />
           <img v-else src="/logoMain_d.svg" alt="Tracoph Logo" class="w-8" /> --> 
-          <Span class="name text-xl  md:text-4xl">Rishi Raj Jain</Span>
+          <Span class="name text-2xl  md:text-4xl">Rishi Raj Jain</Span>
         </nuxt-link>
       
         </div>
@@ -90,7 +90,7 @@
               >Contact Me</a>
 
               <a
-                href="https://docs.google.com/document/d/1JcDdPgwZYYAt6B574EY3fc__xwqjt-Pz7LD29I_w72I/edit?usp=sharing"
+                href="https://drive.google.com/file/d/11HEywCl2B-2jiuuWZ2FL8E_MAEdeybIB/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 class="block text-txt-pri px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900"
@@ -256,12 +256,10 @@ export default {
 .name{
   font-family: 'Mrs Saint Delafield', cursive;
 }
-
 .nuxt-link-active {
-  border-bottom: 2px solid #ff4081;
-  color: #ff4081;
+  border-bottom: 1px solid rgb(13, 107, 174);
 }
 .logoStyle {
-  border-bottom: none;
+  border: none;
 }
 </style>
