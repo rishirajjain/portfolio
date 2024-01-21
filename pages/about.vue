@@ -4,22 +4,26 @@
       class="container flex flex-col-reverse md:flex-row w-full items-center justify-center md:items-start md:w-4/5"
     >
       <div class="flex flex-col w-3/4">
-        <p class="text-4xl name mb-4 font-bold">Who is Rishi?</p>
+        <p class="text-3xl md:text-4xl title-landing mb-4 font-bold">Unleashing Creativity, One Pixel at a Time</p>
 
         <p class="text-txt-sec text-base md:text-lg ">
-          Rishi Raj Jain is a Product Designer with 3+ years of experience, He is proficient in all aspects of the design process and has made close 20+ features from 0-1. He thrives in a fast paced environment and is always looking for opportunities to learn new things. He helps run an e-commerce business <a href="https://bharatexotics.com/" target="_blank" class="underline text-indigo-400">Bharatexotics</a>  and is a graduate in Electronics and Communication.
-          He is currently working with <a href="https://www.mindpeers.co" target="_blank" class="underline text-indigo-400">MindPeers</a> as Lead UX/UI Designer.
-          <br />
-          <br />He commands the cupid, makes users fall in love with the product.
-          He strongly believes in providing value and simplifying people's lives.
+          Hey there! I'm Rishi, the wizard of the design world where imagination meets pixels. My journey in design isn't just a career path; it's a rollercoaster ride through a universe of creativity. With a rich background in Product Design and a degree in Electronics and Communication, I've been weaving magic into every project I touch.
         </p>
-        <p class="text-4xl name mt-12 mb-4 font-bold">More about Rishi</p>
+        <p class="text-3xl md:text-4xl title-landing mt-12 mb-4 font-bold">The Design Dynamo</p>
+        <p class="text-txt-sec text-base md:text-lg self-start">
+          Just like a chef experiments with flavors, I play with design elements to create experiences that are not just visually stunning but also intuitively user-friendly. At Bharatexotics, my entrepreneurial venture, I apply this recipe to spice up the e-commerce scene.
+        </p>
+          <p class="text-3xl md:text-4xl title-landing mt-12 mb-4 font-bold">The Art of Design and the Science of Fun</p>
+        <p class="text-txt-sec text-base md:text-lg self-start">
+          My philosophy? Design should be like a good joke - it doesn't need explaining. I strive to create designs that speak for themselves, clear, engaging, and sometimes with a hint of mischief. It’s like being a digital storyteller, but instead of words, I use layouts, colors, and typography.
+        </p>      
+        <p class="text-3xl md:text-4xl title-landing mt-12 mb-4 font-bold">Rishi: The Explorer</p>
         <p class="text-txt-sec text-base md:text-lg self-start mb-12">
-          Rishi is passionate about making sure that systems, interface, semantics, and graphics are human-friendly, aesthetically pleasing, emotive, clear, and usable.From workflow diagrams to detailed user interface mockups and animations, Rishi loves crafting on-screen experiences.
-          <br />
-          <br />Photography, traveling, and reading are some of the things you'd often find him doing. Peep the resume or check out my LinkedIn page to take a closer look at my work history and whatnot.
-        </p>
-      </div>
+          When I'm not orchestrating symphonies of design, you’ll find me with a camera in hand, capturing life’s unrehearsed moments, traversing unknown paths in far-off lands, or lost in the world of books. My life outside design is an open book, filled with chapters of adventure, learning, and exploration.
+
+Curious for more? Dive into my journey beyond the pixels. My resume and LinkedIn page are your tickets to this adventure – no baggage required, just bring your curiosity!        </p>   
+      
+        </div>
 
       <div class="lg:ml-4 md:w-1/4 mb-8 md:mb-0 text-white">
       <div v-for="item in gallery.imageLink" :key="item.id">

@@ -7,7 +7,7 @@
           <h1
             class="text-3xl md:text-6xl font-bold mt-10 text-center"> 
             <span class="title-landing">Creative</span>
-            <span style="-webkit-text-fill-color: transparent; -webkit-text-stroke: 1px;">Design</span>
+            <span style="text-white">Design</span>
             <span class="title-landing">folio</span>
 
           </h1>

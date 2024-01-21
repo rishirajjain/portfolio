@@ -3,10 +3,10 @@
     <div class="relative inline-block text-left">
       <div>
         <span class="rounded-md shadow-sm">
-          <button
+          <div class="btn-dance w-full rounded-md px-6 py-2 hover:bg-gray-800">
+            <button
             type="button"
-            :class="theme=='theme-light'?'hireBtnlight':'hireBtndark'"
-            class="pointer-events-auto text-base inline-flex  justify-center w-full rounded-full px-6 py-2 border-2 border-blue-600 text-txt-pri leading-5 focus:outline-none transition ease-in-out duration-150"
+            class="pointer-events-auto text-base inline-flex justify-center w-full rounded-md  text-txt-pri leading-5 focus:outline-none "
             @click="showMenu=!showMenu"
             aria-haspopup="true"
             aria-expanded="true"
@@ -20,6 +20,7 @@
               />
             </svg>
           </button>
+          </div>
           <button
             v-if="showMenu"
             @click="showMenu = false"
@@ -40,7 +41,7 @@
               href="#contact"
             >Contact Me</a>
             <a
-              href="https://docs.google.com/document/d/1JcDdPgwZYYAt6B574EY3fc__xwqjt-Pz7LD29I_w72I/edit?usp=sharing"
+              href="https://drive.google.com/file/d/11HEywCl2B-2jiuuWZ2FL8E_MAEdeybIB/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               class="block px-4 text-txt-pri py-2 text-sm leading-5 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
@@ -65,11 +66,51 @@ export default {
 </script>
 
 <style scoped>
-.hireBtnlight {
-  box-shadow: 6px 6px 12px #e6dddf;
+@keyframes border-dance {
+  from {
+        transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+    }
 }
-.hireBtndark {
-  box-shadow: 6px 6px 12px #000407;
+
+.btn-dance {
+  --offset: 1px;
+  position: relative;
+  overflow: hidden;
+  background: rgb(0, 19, 34)
 }
-</style>>
+.btn-dance button{
+    background: transparent;
+    color: white;
+    position: relative;
+    inset: 0;
+    z-index: 10;
+}
+.btn-dance::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  background: conic-gradient(transparent 270deg, white, transparent);
+  animation: border-dance 2s linear infinite;
+}
+
+.btn-dance::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+
+</style>
 

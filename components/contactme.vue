@@ -23,15 +23,23 @@
             <p class="text-xs">LinkedIn</p>
           </a>
           <a
-            href="https://twitter.com/rishirajjain98"
+            href="https://behance.com/rishirajjain98"
             class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex gap-2  flex-col justify-center items-center w-24 p-2"
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/social/twitter-white.svg" class="w-64 h-12" alt="twitter profile" />
-            <p class="text-xs">Twitter</p>
+            <img src="/social/behance.svg" class="w-64 h-12" alt="twitter profile" />
+            <p class="text-xs">Behance</p>
           </a>
-
+          <a
+            href="https://www.instagram.com/rishirajjain.uix/"
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex gap-2  flex-col justify-center items-center w-24 p-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/social/instagram.svg" class="w-64 h-12" alt="instagram profile" />
+            <p class="text-xs">Instagram</p>
+          </a>
           <a
             href="https://github.com/rishirajjain"
             class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex gap-2  flex-col justify-center items-center w-24 p-2"
@@ -42,15 +50,7 @@
             <p class="text-xs">Github</p>
           </a>
 
-          <a
-            href="https://www.instagram.com/rishirajjain.ux/"
-            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex gap-2  flex-col justify-center items-center w-24 p-2"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src="/social/instagram.svg" class="w-64 h-12" alt="instagram profile" />
-            <p class="text-xs">Instagram</p>
-          </a>
+         
         </div>
       </div>
       <form
